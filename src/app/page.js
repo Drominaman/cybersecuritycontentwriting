@@ -125,55 +125,16 @@ export default function Home() {
             <li>Social media content visual and written</li>
             <li>Infographics and other text heavy desinged pieces</li>
           </ul>
-          {/* Interactive content journey grid below */}
-          <div className="mt-12">
-            <h3 className="text-xl font-semibold mb-4">Explore the Content Journey</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {[
-                { label: 'SEO', stage: 'Awareness', type: 'Cybersecurity Writer' },
-                { label: 'Blogs', stage: 'Awareness', type: 'Cybersecurity Writer' },
-                { label: 'Whitepaper/Guide', stage: 'Education', type: 'Cybersecurity Writer' },
-                { label: 'Webinars', stage: 'Selection', type: 'Product Team' },
-                { label: 'Case studies', stage: 'Selection', type: 'Cybersecurity Writer' },
-                { label: 'Demo', stage: 'Selection', type: 'Product Team' },
-                { label: 'Comparison Sheet', stage: 'Selection', type: 'Cybersecurity Writer' },
-                { label: 'Social media content', stage: 'All', type: 'Distribution' },
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="relative group p-4 border rounded-lg shadow hover:shadow-lg bg-white transition duration-200 cursor-pointer hover:scale-105 hover:ring-2 hover:ring-blue-400"
-                >
-                  <div className="font-semibold">{item.label}</div>
-                  <div className="text-xs text-gray-500">{item.stage} • {item.type}</div>
-                  <div className="absolute z-10 opacity-0 group-hover:opacity-100 transition bg-gray-800 text-white text-sm rounded px-2 py-1 left-1/2 -translate-x-1/2 top-full mt-1 w-56 text-center pointer-events-none">
-                    {item.label === 'Webinars' &&
-                      'Webinars - Mid-funnel education tool led by marketing or SMEs.'}
-                    {item.label === 'SEO' &&
-                      'SEO - Top-of-funnel channel, drives organic awareness and discovery.'}
-                    {item.label === 'Blogs' &&
-                      'Blogs - Build authority, educate, and attract prospects at the awareness stage.'}
-                    {item.label === 'Whitepaper/Guide' &&
-                      'Whitepapers/Guides - Deep-dive educational assets for buyers researching solutions.'}
-                    {item.label === 'Case studies' &&
-                      'Case studies - Demonstrate real-world value and outcomes for selection-stage buyers.'}
-                    {item.label === 'Demo' &&
-                      'Demo - Product-led walkthrough for buyers in the selection phase.'}
-                    {item.label === 'Comparison Sheet' &&
-                      'Comparison Sheet - Helps buyers compare solutions and features at the point of decision.'}
-                    {item.label === 'Social media content' &&
-                      'Social media - Supports all stages; amplifies reach and engagement.'}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <div className="my-8"></div>
+          {/* Explore the Cybersecurity Content Journey - static diagram image */}
+          <h3 className="text-xl font-semibold mb-4 mt-10">Explore the Cybersecurity Content Journey</h3>
           <div className="my-8">
-            <Image 
+            <Image
               src="/Screenshot 2025-04-22 at 14.32.33.png"
-              alt="Customer journey content types"
-              width={1000}
-              height={500}
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-md"
+              alt="Cybersecurity Content Journey Diagram"
+              width={1200}
+              height={800}
+              className="w-full max-w-5xl mx-auto rounded-lg shadow-md"
             />
           </div>
         </section>
