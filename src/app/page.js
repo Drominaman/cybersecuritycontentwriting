@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
 
       <header className="bg-gray-900 text-white p-8 relative text-center">
-        <img src="/logo.webp" alt="Content Visit logo" className="absolute top-4 right-4 w-20 h-10" />
+        <Image src="/logo.webp" alt="Content Visit logo" width={80} height={40} className="absolute top-4 right-4" />
         <h1 className="text-4xl font-bold mb-2">Cybersecurity Content Writing Services Guide</h1>
         <p className="text-lg max-w-2xl mx-auto">How, why and where to hire cybersecurity content writer support.</p>
         <a
@@ -32,7 +33,7 @@ export default function Home() {
           <p className="mb-4 leading-relaxed">We reviewed every cybersecurity content writer currently on the market, evaluated their pricing and service offers. Then we listed them here for your convenience.</p>
           <h3 className="text-xl font-semibold mt-6 mb-4 leading-relaxed">10 Best Cybersecurity Content Writers for Hire Right Now</h3>
           <div className="h-4"></div>
-          <p className="mb-4 leading-relaxed">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we’ve looked at hundreds of writers’ CVs and offers.</p>
+          <p className="mb-4 leading-relaxed">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we&rsquo;ve looked at hundreds of writers&rsquo; CVs and offers.</p>
           <p className="mb-4 leading-relaxed">Here are ten that stood out to us, we also gave each ranking based on our assessment of their skills as a cybersecurity content writer plus external accreditations.</p>
           <div className="grid gap-6 md:grid-cols-2">
             <a href="https://www.contentvisit.com" target="_blank" rel="noopener noreferrer" className="block border border-blue-600 p-6 rounded-xl bg-blue-50 shadow-lg hover:shadow-xl transition duration-200 cursor-pointer ring-1 ring-blue-300">
@@ -84,34 +85,36 @@ export default function Home() {
           It is how companies produce content that engages IT leaders, CISOs, practitioners and other members of security solution buying teams.</p>
           <div className="space-y-4">
             <p>A good cybersecurity content writer, either hired directly or through an agency, is the core asset within every content marketing effort. This is true for established blue-chip companies and recently funded information security start-ups alike. Going to market with a solution or service depends partly on having the right sales and marketing content.</p>
-            <p>But content doesn't stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long—traditionally, it takes between 12 and 24 months for deals to mature—and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
+            <p>But content doesn&#39;t stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long&mdash;traditionally, it takes between 12 and 24 months for deals to mature&mdash;and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
             <p>Between the moment a prospect notices a gap in their security posture and the day they decide to buy your solution, they need to see (and share) a host of sales collateral, case studies, whitepapers, and reports.</p>
-            <p>Prospects will also search for similar solutions to yours on Google, read some of your SMEs’ thought leadership content, or watch a webinar you host.</p>
-            <p>This content-heavy marketing environment puts content marketing and content writing at the core of cybersecurity marketing success. Without content for buyers to consider during their research and evaluation efforts, many cybersecurity sales (even when directly referred) wouldn't happen.</p>
-            <p>Unless your organisation has the internal capacity and skill set to focus on producing content assets at scale, cybersecurity writers play an essential role here—translating technical information into marketing material aimed at your target audience.</p>
+            <p>Prospects will also search for similar solutions to yours on Google, read some of your SMEs&rsquo; thought leadership content, or watch a webinar you host.</p>
+            <p>This content-heavy marketing environment puts content marketing and content writing at the core of cybersecurity marketing success. Without content for buyers to consider during their research and evaluation efforts, many cybersecurity sales (even when directly referred) wouldn&#39;t happen.</p>
+            <p>Unless your organisation has the internal capacity and skill set to focus on producing content assets at scale, cybersecurity writers play an essential role here&mdash;translating technical information into marketing material aimed at your target audience.</p>
           </div>    
           <div className="h-6"></div>
 
           <p><strong>Security decision funnel:</strong> Marketing content supports buyers as they move closer to a purchase decision.</p>
 
           <div className="my-8">
-            <img
+            <Image
               src="/napkin-selection-2.svg"
               alt="What is cybersecurity content writing - diagram"
+              width={900}
+              height={400}
               className="w-full max-w-3xl mx-auto rounded-lg shadow-md"
             />
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Why It’s Different from General Tech Writing</h2>
-          <p>Cybersecurity content writing combines product with market knowledge. It's how you connect cybersecurity buyer personas with solutions to their pain points. Its not about explaining how a solution works but convicing someone that a solution makes sense for them and is worth considering as an addition to their security program. In a market of over 5000 security solutions, this is a critical task.</p>
+          <h2 className="text-2xl font-semibold mb-4">Why It&rsquo;s Different from General Tech Writing</h2>
+          <p>Cybersecurity content writing combines product with market knowledge. It&#39;s how you connect cybersecurity buyer personas with solutions to their pain points. It&#39;s not about explaining how a solution works but convicing someone that a solution makes sense for them and is worth considering as an addition to their security program. In a market of over 5000 security solutions, this is a critical task.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Content Types that a Cybersecurity Content Writer Creates</h2>
           <ul className="list-disc ml-6 space-y-1">
-            <li>Blog posts and pillar & cluster content designed to gain organic traffic</li>
+            <li>Blog posts and pillar &amp; cluster content designed to gain organic traffic</li>
             <li>Case studies for convesion and lead enagement</li>
             <li>Landing pages and solution briefs</li>
             <li>Ghostwritten articles on third party websites</li>
@@ -124,18 +127,20 @@ export default function Home() {
           </ul>
           <div className="my-8">
           <div className="my-8">
-  <img 
-    src="/Screenshot 2025-04-22 at 14.32.33.png"
-    alt="Customer journey content types"
-    className="w-full max-w-4xl mx-auto rounded-lg shadow-md"
-  />
-</div>
+            <Image 
+              src="/Screenshot 2025-04-22 at 14.32.33.png"
+              alt="Customer journey content types"
+              width={1000}
+              height={500}
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-md"
+            />
+          </div>
           </div>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Cybersecurity content writing process</h2>
-          <p>Start with expert insights from talking to internal subject matter experts. Add extensive market research. Audit compeitor content positing and messanging to find content gaps. Match content to an intended action/next step i.e download a whitepaper. Plan for a particular distribution method i.e an SEO keyword to rank for. Then start writing. Plus don't forget to add graphcis.  </p>
+          <p>Start with expert insights from talking to internal subject matter experts. Add extensive market research. Audit compeitor content positing and messanging to find content gaps. Match content to an intended action/next step i.e download a whitepaper. Plan for a particular distribution method i.e an SEO keyword to rank for. Then start writing. Plus don&#39;t forget to add graphcis.  </p>
         </section>
 
 
@@ -156,21 +161,17 @@ export default function Home() {
             But since everyone started generating lots of the same content, and Google switched its ranking system in response (and is trying to get this traffic through SGE), generic TOF content will not cut it anymore.
           </p>
           <p className="mb-4">
-            Unless you are IBM, Microsoft, or some other household name (or writing about bleeding edge tech or threat reports), no one is going to your site for generic "what is x technology" answers.
+            Unless you are IBM, Microsoft, or some other household name (or writing about bleeding edge tech or threat reports), no one is going to your site for generic &quot;what is x technology&quot; answers.
           </p>
           <p className="mb-4">
-            Google isn't showing your top-of-the-funnel pages to searchers as much as they used to. For generic top-of-the-funnel content, use AI alongside a human writer/editor.
+            Google isn&rsquo;t showing your top-of-the-funnel pages to searchers as much as they used to. For generic top-of-the-funnel content, use AI alongside a human writer/editor.
             For MOF and BOF product-led and technical content, use a cybersecurity content writer.
           </p>
           <p className="mb-4">
-            <p>
-              Google’s helpful content update killed top-of-the-funnel content SEO for anyone who isn't a top brand. It's also true that AI search engines themselves (like Chat GPT Search and Perplexity) will not themselves rank AI content (why would they when they just generate it themselves?)
-            </p>
+            Google&rsquo;s helpful content update killed top-of-the-funnel content SEO for anyone who isn&rsquo;t a top brand. It&rsquo;s also true that AI search engines themselves (like Chat GPT Search and Perplexity) will not themselves rank AI content (why would they when they just generate it themselves?)
           </p>
           <p className="mb-4">
-            <p>
-              Learn more about how we rank B2B content (including our own) on AI and generative AI search engines.
-            </p>
+            Learn more about how we rank B2B content (including our own) on AI and generative AI search engines.
           </p>
           <p className="mb-4">
             But one place you can win with cybersecurity content is in the middle of the funnel (MOF) and bottom of the funnel (BOF) content.
@@ -185,9 +186,9 @@ export default function Home() {
           <p className="mb-4">Aside from posting a job advertisement on your website, you can look for a cybersecurity content writer in five places:</p>
           <p className="mb-4"><strong>Your network.</strong> 82% of B2B decision-makers say that the buying process should involve a referral. Ask your colleagues, email list, LinkedIn connections etc., for recommendations.</p>
           <p className="mb-4"><strong>Marketplaces like Upwork and Fiverr.</strong> These are actually not great places to hire someone. High competition and a pay-to-play model means that your chances of finding a talented individual who can perform at any of the abovementioned levels is low.</p>
-          <p className="mb-4"><strong>Reddit.</strong> The Reddit forum r/hireawriter is a great place to find entry-level writing talent at reasonable rates. We've had success here in the past.</p>
-          <p className="mb-4"><strong>The open web.</strong> Search for "cybersecurity content writer" on Google, but be wary. Even if someone shows up in a top position, their ability to deliver across the three levels mentioned above is not guaranteed. It just means their web pages' SEO meets your search intent. You still need to assess their skills carefully.</p>
-          <p className="mb-4"><strong>A "content mill."</strong> Websites that offer content in bulk at a fixed per-word or monthly price. In our experience, these are to be avoided at all costs and are essentially redundant in the age of AI.</p>
+          <p className="mb-4"><strong>Reddit.</strong> The Reddit forum r/hireawriter is a great place to find entry-level writing talent at reasonable rates. We&rsquo;ve had success here in the past.</p>
+          <p className="mb-4"><strong>The open web.</strong> Search for &quot;cybersecurity content writer&quot; on Google, but be wary. Even if someone shows up in a top position, their ability to deliver across the three levels mentioned above is not guaranteed. It just means their web pages&rsquo; SEO meets your search intent. You still need to assess their skills carefully.</p>
+          <p className="mb-4"><strong>A &quot;content mill.&quot;</strong> Websites that offer content in bulk at a fixed per-word or monthly price. In our experience, these are to be avoided at all costs and are essentially redundant in the age of AI.</p>
           <div className="h-6"></div>
 
           <h4 className="font-semibold">Hiring an Agency vs. a Writer</h4>
@@ -218,7 +219,7 @@ export default function Home() {
           </p>
           <div>
             <div>
-              <h3 className="font-semibold">How do you write cybersecurity content if you're not a cybersecurity practitioner</h3>
+              <h3 className="font-semibold">How do you write cybersecurity content if you&#39;re not a cybersecurity practitioner</h3>
               <p>You need to be technical and have a broad understanding of the general market plus a specific understanding of the personas and market segment you are talking. Then partner directly with SMEs and review the product you are marketing.</p>
             </div>
             <div>
@@ -231,7 +232,7 @@ export default function Home() {
             <div className="h-6"></div>
 
               <h3 className="font-semibold">How is this different from hiring a general contentwriter?</h3>
-              <p>Generalists don’t know how to talk to security buyers. We do. That’s the difference between noise and content that converts.</p>
+              <p>Generalists don&#39;t know how to talk to security buyers. We do. That&#39;s the difference between noise and content that converts.</p>
             </div>
             <div className="h-6"></div>
             <div>
@@ -258,9 +259,11 @@ export default function Home() {
             </form>
             <div className="h-8"></div>
             <div className="w-full max-w-xs">
-              <img 
+              <Image 
                 src="/cybersecurity_awards_2025_gold.png"
                 alt="Cybersecurity Excellence Awards 2025 Winner"
+                width={300}
+                height={200}
                 className="w-full h-auto"
               />
             </div>
@@ -269,7 +272,7 @@ export default function Home() {
       </main>
 
       <footer className="p-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Content Visit. All rights reserved.
+        &copy; {new Date().getFullYear()} Content Visit. All rights reserved.
       </footer>
     </div>
   );
