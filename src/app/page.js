@@ -10,6 +10,112 @@ export default function Home() {
         <meta name="description" content="Cybersecurity content writer round up, reviews and service guide to help you  in a world filled with sub-par AI content.
 " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "CybersecurityContentWriting.com",
+              "url": "https://cybersecuritycontentwriting.com",
+              "logo": "https://cybersecuritycontentwriting.com/logo.webp",
+              "description": "CybersecurityContentWriting.com is a service guide and industry roundup showcasing top cybersecurity content writers and agencies.",
+              "sameAs": [
+                "https://www.linkedin.com/company/content-visit"
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Cybersecurity Content Writing Services Guide",
+              "url": "https://cybersecuritycontentwriting.com",
+              "description": "A curated guide to the best cybersecurity content writers and agencies helping security vendors with technical and strategic content.",
+              "inLanguage": "en",
+              "publisher": {
+                "@type": "Organization",
+                "name": "CybersecurityContentWriting.com",
+                "url": "https://cybersecuritycontentwriting.com"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Top 10 Cybersecurity Content Writers",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Laura Martisiute / Content Visit",
+                  "url": "https://www.contentvisit.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Rodika Tollefson",
+                  "url": "https://seattletechnologywriter.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Amanda Scheldt",
+                  "url": "https://infinitycontentsolutions.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Karen Walsh / Allegro Solutions",
+                  "url": "https://allegrosolutionsllc.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Pete Hugh",
+                  "url": "https://petehugh.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Sara J. Nguyen",
+                  "url": "https://sarajnguyen.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "Lewis Commercial Writing",
+                  "url": "https://lewiscommercialwriting.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 8,
+                  "name": "Alice Hollis",
+                  "url": "https://alicehollis.co.uk"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 9,
+                  "name": "Ian Correa",
+                  "url": "https://www.linkedin.com/in/ian-correa"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 10,
+                  "name": "Lea Rabinowitz / &content marketing",
+                  "url": "https://andcontentmarketing.com"
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       <header className="bg-gray-900 text-white p-8 relative text-center">
