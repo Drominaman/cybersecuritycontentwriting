@@ -126,7 +126,7 @@ export default function Home() {
             <li>Infographics and other text heavy desinged pieces</li>
           </ul>
           <div className="my-8"></div>
-          {/* Explore the Cybersecurity Content Journey - static diagram image */}
+          {/* Cybersecurity content writers enable the cybersecurity buyer journey - static diagram image */}
           <h3 className="text-xl font-semibold mb-4 mt-10">Explore the Cybersecurity Content Journey</h3>
           <div className="my-8">
             <Image
@@ -142,6 +142,49 @@ export default function Home() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Cybersecurity content writing process</h2>
           <p>Start with expert insights from talking to internal subject matter experts. Add extensive market research. Audit compeitor content positing and messanging to find content gaps. Match content to an intended action/next step i.e download a whitepaper. Plan for a particular distribution method i.e an SEO keyword to rank for. Then start writing. Plus don&#39;t forget to add graphcis.  </p>
+        </section>
+
+        {/* Objections We Hear—and How We Respond */}
+        <section className="mt-16">
+          <h2 className="text-2xl font-semibold mb-4">Don't let these reasons stop you hiring a cybersecurity content writer</h2>
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-semibold">“They won’t understand our product.”</h4>
+              <p>We specialize in security. You won’t need to teach us what XDR, SBOM, or MITRE ATT&amp;CK mean—we already work with teams in those spaces.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“They’ll just recycle generic security content.”</h4>
+              <p>We avoid thoughtless trend pieces. Our approach is tactical, pain-point-driven, and focused on what your buyers actually search for or struggle with.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“We’ll spend more time explaining things than getting results.”</h4>
+              <p>We’ve worked with early-stage startups and enterprise vendors. We know how to ramp up quickly and ask the right questions without hand-holding.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“They don’t know how to tie content to pipeline.”</h4>
+              <p>We start with bottom-of-funnel content: battlecards, objection-handling posts, comparison pages, demo-request CTAs.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“We already have a writer.”</h4>
+              <p>A writer isn’t a strategy. We help with positioning, prioritization, interlinking, and conversion—plus we can coach and uplevel your current team.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“Agencies don’t move fast enough.”</h4>
+              <p>We work in 3-month sprints with weekly check-ins. No 6-month strategy decks. No bloated processes. Just shipping and adjusting based on results.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“We’ve tried an agency before and it didn’t work.”</h4>
+              <p>You probably hired a generalist. We only work with cybersecurity companies, and we’re used to making content for CISOs, buyers, and engineers.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“They won’t capture our voice.”</h4>
+              <p>We ghostwrite for founders, PMs, and CISOs. Our job is to make content that sounds like it came from your team, not ours. You’ll have final approval before anything goes live.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold">“We’re in a niche—will they get it?”</h4>
+              <p>We’ve worked on zero-trust MFA, firmware security, post-quantum crypto, endpoint protection, and plenty of weird edge cases. Niche is the norm for us.</p>
+            </div>
+          </div>
         </section>
 
 
