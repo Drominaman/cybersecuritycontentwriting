@@ -124,6 +124,9 @@ export default function Home() {
 
 
       <main className="p-4 space-y-8">
+        <h1 className="text-4xl font-bold mb-6">
+          Cybersecurity Content Writer Guide
+        </h1>
         <section className="prose prose-lg max-w-none">
           <h2 className="text-2xl font-semibold mb-4 leading-relaxed">Read This Before You Hire a Cybersecurity Content Writer</h2>
           <p className="mb-4 leading-relaxed">Cybersecurity content writer service guide to help you in a world filled with sub-par AI content.</p>
@@ -383,9 +386,6 @@ export default function Home() {
       <footer className="p-8 text-center text-sm text-gray-500">
         <nav className="space-x-4">
           <Link href="/" className="underline">Home</Link>
-          <Link href="/publishers" className="underline">Publishers</Link>
-          <Link href="/agencies" className="underline">Agencies</Link>
-          <Link href="/about" className="underline">About</Link>
         </nav>
       </footer>
 
