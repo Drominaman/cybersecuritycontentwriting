@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -381,10 +382,10 @@ export default function Home() {
 
       <footer className="p-8 text-center text-sm text-gray-500">
         <nav className="space-x-4">
-          <a href="/" className="underline">Home</a>
-          <a href="/publishers" className="underline">Publishers</a>
-          <a href="/agencies" className="underline">Agencies</a>
-          <a href="/about" className="underline">About</a>
+          <Link href="/" className="underline">Home</Link>
+          <Link href="/publishers" className="underline">Publishers</Link>
+          <Link href="/agencies" className="underline">Agencies</Link>
+          <Link href="/about" className="underline">About</Link>
         </nav>
       </footer>
 
