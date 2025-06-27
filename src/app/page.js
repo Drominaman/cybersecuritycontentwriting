@@ -12,6 +12,7 @@ export default function Home() {
         <meta name="description" content="Cybersecurity content writer round up, reviews and service guide to help you  in a world filled with sub-par AI content.
 " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.cybersecuritycontentwriting.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
