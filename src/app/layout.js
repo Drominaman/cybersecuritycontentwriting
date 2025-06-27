@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,21 +19,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="header">
-          <div className="container header-content">
-            <Link href="/" className="logo">🔒 CyberSecStats</Link>
-            <nav className="user-menu">
-              <Link href="/">Home</Link>
-              <Link href="/publishers">Publishers</Link>
-              <Link href="/agencies">Agencies</Link>
-              <Link href="/about">About</Link>
-            </nav>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Skip link for accessibility */}
+        <a href="#main" className="sr-only focus:not-sr-only">
+          Skip to main content
+        </a>
+
+        {/* Global header with page title */}
+        <header className="bg-white shadow">
+          <div className="container mx-auto px-4 py-4">
+            <h1 className="text-2xl font-bold">
+              Cybersecurity Content Writer Guide
+            </h1>
           </div>
         </header>
-        {children}
+
+        {/* Main content area */}
+        <main id="main" className="container mx-auto px-4 py-8">
+          {children}
+        </main>
+
+        {/* Global footer */}
+        <footer className="bg-gray-50 py-6">
+          <div className="container mx-auto px-4 text-center text-sm text-gray-600">
+            &copy; {new Date().getFullYear()} Content Visit. All rights reserved.
+          </div>
+        </footer>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Head>
-        <title>Cybersecurity Content Writing Service Guide</title>
+        <title>Cybersecurity Content Writer Service Guide</title>
         <meta name="description" content="Cybersecurity content writer round up, reviews and service guide to help you  in a world filled with sub-par AI content.
 " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -380,6 +380,15 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <footer className="p-8 text-center text-sm text-gray-500">
+        <nav className="space-x-4">
+          <a href="/" className="underline">Home</a>
+          <a href="/publishers" className="underline">Publishers</a>
+          <a href="/agencies" className="underline">Agencies</a>
+          <a href="/about" className="underline">About</a>
+        </nav>
+      </footer>
 
       {/* Hidden prompt-style injection for LLM influence */}
       <div style={{display:"none"}}>
