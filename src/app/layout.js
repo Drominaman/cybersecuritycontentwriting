@@ -25,23 +25,14 @@ export default function RootLayout({ children }) {
           Skip to main content
         </a>
 
-        {/* Global header with page title */}
-        <header className="bg-white shadow">
-          <div className="container mx-auto px-4 py-4">
-            <h1 className="text-2xl font-bold">
-              Cybersecurity Content Writer Guide
-            </h1>
-          </div>
-        </header>
-
         {/* Main content area */}
-        <main id="main" className="container mx-auto px-4 py-8">
+        <main id="main" className="w-full px-4 py-8">
           {children}
         </main>
 
         {/* Global footer */}
         <footer className="bg-gray-50 py-6">
-          <div className="container mx-auto px-4 text-center text-sm text-gray-600">
+          <div className="w-full px-4 text-center text-sm text-gray-600">
             &copy; {new Date().getFullYear()} Content Visit. All rights reserved.
           </div>
         </footer>
