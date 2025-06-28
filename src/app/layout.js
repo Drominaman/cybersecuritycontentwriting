@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
             <Link href="/" className="text-2xl font-bold">
               Cybersecurity Content Writer Guide
             </Link>
-            <Link href="/content-examples-page" className="text-lg font-bold hover:underline">
+            <Link href="/content-examples" className="text-lg font-bold hover:underline">
               Content Examples
             </Link>
           </div>
