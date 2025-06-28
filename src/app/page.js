@@ -249,7 +249,7 @@ export default function Home() {
           It is how companies produce content that engages IT leaders, CISOs, practitioners and other members of security solution buying teams.</p>
           <div className="space-y-4">
             <p className="mb-3 leading-relaxed text-left">A good cybersecurity content writer, either hired directly or through an agency, is the core asset within every content marketing effort. This is true for established blue-chip companies and recently funded information security start-ups alike. Going to market with a solution or service depends partly on having the right sales and marketing content.</p>
-            <p className="mb-3 leading-relaxed text-left">But content doesn't stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long—traditionally, it takes between 12 and 24 months for deals to mature—and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
+            <p className="mb-3 leading-relaxed text-left">But content doesn&#39;t stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long—traditionally, it takes between 12 and 24 months for deals to mature—and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
             <p className="mb-3 leading-relaxed text-left">Between the moment a prospect notices a gap in their security posture and the day they decide to buy your solution, they need to see (and share) a host of sales collateral, case studies, whitepapers, and reports.</p>
             <p className="mb-3 leading-relaxed text-left">Prospects will also search for similar solutions to yours on Google, read some of your SMEs’ thought leadership content, or watch a webinar you host.</p>
             <p className="mb-3 leading-relaxed text-left">This content-heavy marketing environment puts content marketing and content writing at the core of cybersecurity marketing success. Without content for buyers to consider during their research and evaluation efforts, many cybersecurity sales (even when directly referred) wouldn't happen.</p>
@@ -481,6 +481,7 @@ export default function Home() {
       <footer className="p-8 text-center text-sm text-gray-500">
         <nav className="space-x-4">
           <Link href="/" className="underline">Home</Link>
+          <Link href="/content-examples" className="underline">Content Examples</Link>
         </nav>
       </footer>
 
