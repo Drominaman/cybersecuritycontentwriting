@@ -215,10 +215,10 @@ export default function Home() {
           Cybersecurity Content Writer Guide
         </h1>
         <section className="prose prose-lg max-w-none">
-          <h2 className="text-2xl font-semibold mb-4 leading-relaxed">Read This Before You Hire a Cybersecurity Content Writer</h2>
+          <h2 className="text-2xl font-semibold mb-4 leading-relaxed">Hiring a Cybersecurity Content Writer? Read this first</h2>
           <div className="h-4"></div>
-          <p className="mb-3 leading-relaxed text-left">Cybersecurity content writer service guide to help you in a world filled with sub-par AI content.</p>
-          <p className="mb-3 leading-relaxed text-left">This list is curated by cybersecurity content marketing pros at Content Visit. A cybersecurity content marketing agency with years of experience evaluating, hiring and deploying cybersecurity content writing talent.</p>
+          <p className="mb-3 leading-relaxed text-left">A cybersecurity content writer service guide to help you stand out in a world filled with sub-par AI content.</p>
+          <p className="mb-3 leading-relaxed text-left">This list is curated by cybersecurity content marketing pros at Content Visit - a cybersecurity content marketing agency with years of experience evaluating, hiring and deploying cybersecurity content writing talent.</p>
           <p className="mb-3 leading-relaxed text-left">We reviewed every cybersecurity content writer currently on the market, evaluated their pricing and service offers. Then we listed them here for your convenience.</p>
           <div className="card">
             <h3 className="text-xl font-semibold mt-6 mb-4 leading-relaxed">10 Best Cybersecurity Content Writers for Hire Right Now</h3>

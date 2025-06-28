@@ -28,14 +28,14 @@ export default function RootLayout({ children }) {
 
         {/* Site header */}
         <header className="bg-blue-600 text-white">
-          <div className="w-full px-4 py-4 flex items-center justify-between">
+          <nav className="w-full px-4 py-4 flex items-center justify-center gap-8 navbar">
             <Link href="/" className="text-2xl font-bold">
               Cybersecurity Content Writer Guide
             </Link>
             <Link href="/content-examples" className="text-lg font-bold hover:underline">
               Content Examples
             </Link>
-          </div>
+          </nav>
         </header>
 
         {/* Main content area */}
