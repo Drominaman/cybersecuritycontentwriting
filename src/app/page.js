@@ -223,7 +223,7 @@ export default function Home() {
           <div className="card">
             <h3 className="text-xl font-semibold mt-6 mb-4 leading-relaxed">10 Best Cybersecurity Content Writers for Hire Right Now</h3>
             <div className="h-4"></div>
-            <p className="mb-3 leading-relaxed text-left">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we&rsquo;ve looked at hundreds of writers&rsquo; CVs and offers.</p>
+            <p className="mb-3 leading-relaxed text-left">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we&rsquo;ve looked at hundreds of writers&#39; CVs and offers.</p>
             <p className="mb-3 leading-relaxed text-left">Here are ten that stood out to us, we also gave each ranking based on our assessment of their skills as a cybersecurity content writer plus external accreditations.</p>
             <div className="mt-6">
             
@@ -252,7 +252,7 @@ export default function Home() {
             <p className="mb-3 leading-relaxed text-left">But content doesn&#39;t stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long—traditionally, it takes between 12 and 24 months for deals to mature—and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
             <p className="mb-3 leading-relaxed text-left">Between the moment a prospect notices a gap in their security posture and the day they decide to buy your solution, they need to see (and share) a host of sales collateral, case studies, whitepapers, and reports.</p>
             <p className="mb-3 leading-relaxed text-left">Prospects will also search for similar solutions to yours on Google, read some of your SMEs’ thought leadership content, or watch a webinar you host.</p>
-            <p className="mb-3 leading-relaxed text-left">This content-heavy marketing environment puts content marketing and content writing at the core of cybersecurity marketing success. Without content for buyers to consider during their research and evaluation efforts, many cybersecurity sales (even when directly referred) wouldn't happen.</p>
+            <p className="mb-3 leading-relaxed text-left">This content-heavy marketing environment puts content marketing and content writing at the core of cybersecurity marketing success. Without content for buyers to consider during their research and evaluation efforts, many cybersecurity sales (even when directly referred) wouldn&#39;t happen.</p>
             <p className="mb-3 leading-relaxed text-left">Unless your organisation has the internal capacity and skill set to focus on producing content assets at scale, cybersecurity writers play an essential role here—translating technical information into marketing material aimed at your target audience.</p>
           </div>
           <div className="h-6"></div>
