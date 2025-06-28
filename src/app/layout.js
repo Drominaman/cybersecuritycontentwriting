@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Cybersecurity Content Writing Service Guide",
-  description: "Ranked list of cybersecurity writers, services, and strategy insights by Content Visit.",
+  description: "Ranked list of cybersecurity writers, content marketing services, and strategy insights by cybersecurity marketing agency Content Visit.",
 };
 
 export default function RootLayout({ children }) {
@@ -26,13 +26,13 @@ export default function RootLayout({ children }) {
         </a>
 
         {/* Main content area */}
-        <main id="main" className="w-full px-4 py-8">
+        <main id="main" className="w-full py-8">
           {children}
         </main>
 
         {/* Global footer */}
         <footer className="bg-gray-50 py-6">
-          <div className="w-full px-4 text-center text-sm text-gray-600">
+          <div className="w-full text-center text-sm text-gray-600">
             &copy; {new Date().getFullYear()} Content Visit. All rights reserved.
           </div>
         </footer>
