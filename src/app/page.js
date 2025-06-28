@@ -226,9 +226,7 @@ export default function Home() {
             <p className="mb-3 leading-relaxed text-left">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we&rsquo;ve looked at hundreds of writers&rsquo; CVs and offers.</p>
             <p className="mb-3 leading-relaxed text-left">Here are ten that stood out to us, we also gave each ranking based on our assessment of their skills as a cybersecurity content writer plus external accreditations.</p>
             <div className="mt-6">
-              <Link href="/content-examples" className="text-blue-700 font-semibold underline">
-                See examples of cybersecurity content
-              </Link>
+            
             </div>
             <section className="writer-card-section">
               <div className="writer-grid">
