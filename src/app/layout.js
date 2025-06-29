@@ -35,6 +35,22 @@ export default function RootLayout({ children }) {
 
             {/* Mobile menu logic should go in a client component. */}
 
+            {/* Mobile Burger Menu */}
+            <div className="md:hidden flex items-center">
+              <details className="relative">
+                <summary className="list-none cursor-pointer flex items-center justify-center h-10 w-10 rounded-full hover:bg-blue-700 transition-colors">
+                  {/* Simple burger icon */}
+                  <span className="block w-6 h-1 bg-white mb-1 rounded"></span>
+                  <span className="block w-6 h-1 bg-white mb-1 rounded"></span>
+                  <span className="block w-6 h-1 bg-white rounded"></span>
+                </summary>
+                <div className="absolute right-0 mt-2 w-48 bg-white text-blue-600 rounded shadow-lg z-50 py-2 flex flex-col">
+                  <Link href="/content-examples" className="block px-4 py-3 text-lg font-bold hover:bg-blue-100">Content Examples</Link>
+                  <Link href="/content-services" className="block px-4 py-3 text-lg font-bold hover:bg-blue-100">Content Services</Link>
+                </div>
+              </details>
+            </div>
+
             {/* Desktop menu */}
             <div className="hidden md:flex items-center gap-8">
               <Link href="/content-examples" className="text-lg font-bold hover:underline">
