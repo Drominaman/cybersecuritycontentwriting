@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <Link href="/content-examples" className="text-lg font-bold hover:underline">
               Content Examples
             </Link>
-            <Link href="/zontent-services" className="text-lg font-bold hover:underline">
+            <Link href="/content-services" className="text-lg font-bold hover:underline">
               Cybersecurity Content Writing Service
             </Link>
           </nav>
