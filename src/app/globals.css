@@ -84,7 +84,7 @@ body {
   margin: 60px 0 30px 0;
   color: #1f2937;
   font-weight: 700;
-  border-bottom: 20px solid #667eea;
+  border-bottom: 5px solid #667eea;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -254,7 +254,7 @@ body {
   }
 
   .card {
-    padding: 25px;
+    padding: 5px;
   }
 
   .writer-grid {

@@ -272,15 +272,14 @@ export default function ContentExamples() {
           <h1 className="text-3xl font-bold mb-8 text-left">
             30 content ideas for cybersecurity companies (with examples)
           </h1>
-          <section className="intro-section mb-16">
-            <h2 className="text-2xl font-semibold mb-6 leading-relaxed">
+          <div className="card mb-16">
+            <h2 className="text-2xl font-semibold mb-6 leading-relaxed text-center">
               What are some good content ideas for cybersecurity marketers?
             </h2>
-            
-            <p className="mb-6 leading-relaxed">
+            <p className="mb-6 leading-relaxed text-center">
               To help you break away from the bland and get inspiration for your cybersecurity content marketing campaigns, we put together this list of content ideas built for cybersecurity marketers, packed with real examples from leading cybersecurity service providers and solution vendors.
             </p>
-          </section>
+          </div>
         </div>
 
         <div className="h-12"></div>

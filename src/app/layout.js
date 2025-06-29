@@ -30,10 +30,13 @@ export default function RootLayout({ children }) {
         <header className="bg-blue-600 text-white">
           <nav className="w-full px-4 py-4 flex items-center justify-center gap-8 navbar">
             <Link href="/" className="text-2xl font-bold">
-              Cybersecurity Content Writer Guide
+              Cybersecurity Content Writing Guide
             </Link>
             <Link href="/content-examples" className="text-lg font-bold hover:underline">
               Content Examples
+            </Link>
+            <Link href="/zontent-services" className="text-lg font-bold hover:underline">
+              Cybersecurity Content Writing Service
             </Link>
           </nav>
         </header>
