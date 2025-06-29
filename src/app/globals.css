@@ -302,3 +302,24 @@ img {
   color: #667eea;
   background-color: rgba(102, 126, 234, 0.1);
 }
+
+.section-center {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.content-types,
+.writer-grid {
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 32px;
+}
+
+.intro-section {
+  max-width: 900px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}

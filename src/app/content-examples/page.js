@@ -272,12 +272,11 @@ export default function ContentExamples() {
           <h1 className="text-3xl font-bold mb-8 text-left">
             30 content ideas for cybersecurity companies (with examples)
           </h1>
-          <section className="w-full max-w-3xl mx-auto text-left mb-16">
+          <section className="intro-section mb-16">
             <h2 className="text-2xl font-semibold mb-6 leading-relaxed">
               What are some good content ideas for cybersecurity marketers?
             </h2>
-            <p className="mb-6 leading-relaxed">
-            </p>
+            
             <p className="mb-6 leading-relaxed">
               To help you break away from the bland and get inspiration for your cybersecurity content marketing campaigns, we put together this list of content ideas built for cybersecurity marketers, packed with real examples from leading cybersecurity service providers and solution vendors.
             </p>
@@ -292,7 +291,7 @@ export default function ContentExamples() {
               {sections.map((item, index) => (
                 <div
                   key={item.id}
-                  className="content-type p-8 bg-white rounded-lg shadow text-base flex flex-col items-start min-h-[260px]"
+                  className="writer-card flex flex-col items-start min-h-[260px]"
                 >
                   <span className="block text-gray-500 text-xs mb-1">#{index + 1}</span>
                   <span className="block text-7xl mb-4">{item.icon}</span>
@@ -309,11 +308,16 @@ export default function ContentExamples() {
           </div>
         </section>
 
-        <section className="mt-16 py-40 bg-white text-center">
-          <p className="text-sm text-gray-600">
-            Need help turning these ideas into high‑performing assets?&nbsp;
-            <a href="/contact" className="underline text-blue-600">Talk to Content Visit.</a>
-          </p>
+        <section className="cta-section mt-16">
+          <h2 className="text-2xl font-bold mb-4">Need help turning these ideas into high‑performing assets?</h2>
+          <a
+            href="https://www.contentvisit.com"
+            target="_blank"
+            rel="noopener"
+            className="cta-button"
+          >
+            Talk to Content Visit
+          </a>
         </section>
       </main>
   );
