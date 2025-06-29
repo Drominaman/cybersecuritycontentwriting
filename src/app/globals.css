@@ -254,11 +254,15 @@ body {
   }
 
   .card {
-    padding: 5px;
+    padding: 20px;
   }
 
   .writer-grid {
     grid-template-columns: 1fr;
+  }
+  .intro-section {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -315,11 +319,27 @@ img {
 .writer-grid {
   padding-left: 24px;
   padding-right: 24px;
-  gap: 32px;
+  gap: 40px;
 }
 
 .intro-section {
   max-width: 900px;
-  margin: 0 auto 2.5rem auto;
+  margin: 0 auto 3rem auto;
   text-align: center;
+}
+
+.card-block {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  padding: 48px 56px;
+  margin-bottom: 48px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .card-block {
+    padding: 24px 12px;
+  }
 }

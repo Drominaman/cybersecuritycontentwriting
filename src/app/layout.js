@@ -28,16 +28,22 @@ export default function RootLayout({ children }) {
 
         {/* Site header */}
         <header className="bg-blue-600 text-white">
-          <nav className="w-full px-4 py-4 flex items-center justify-center gap-8 navbar">
+          <nav className="w-full px-4 py-4 flex items-center justify-between gap-8 navbar relative">
             <Link href="/" className="text-2xl font-bold">
               Cybersecurity Content Writing Guide
             </Link>
-            <Link href="/content-examples" className="text-lg font-bold hover:underline">
-              Content Examples
-            </Link>
-            <Link href="/content-services" className="text-lg font-bold hover:underline">
-              Cybersecurity Content Writing Service
-            </Link>
+
+            {/* Mobile menu logic should go in a client component. */}
+
+            {/* Desktop menu */}
+            <div className="hidden md:flex items-center gap-8">
+              <Link href="/content-examples" className="text-lg font-bold hover:underline">
+                Content Examples
+              </Link>
+              <Link href="/content-services" className="text-lg font-bold hover:underline">
+                Content Services
+              </Link>
+            </div>
           </nav>
         </header>
 
