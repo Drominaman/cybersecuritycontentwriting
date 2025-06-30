@@ -94,7 +94,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-900">
       <Head>
         <title>Cybersecurity Content Writer Service Guide</title>
-        <meta name="description" content="Cybersecurity content writer round up, reviews and service guide to help you  in a world filled with sub-par AI content.
+        <meta name="description" content="Read on for our cybersecurity content writing guide, content writer round up (with reviews) plus a service guide to help you stand out in a world filled with sub-par AI content.
 " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.cybersecuritycontentwriting.com" />
@@ -245,8 +245,8 @@ export default function Home() {
 
         <div className="card" id="what-is-cybersecurity-content-writing">
           <h2 className="text-2xl font-semibold mb-4">What Is Cybersecurity Content Writing?</h2>
-          <p className="mb-3 leading-relaxed text-left">Cybersecurity content writing is support marketing efforts for security vendor or service provider across the buyer journey.
-          It is how companies produce content that engages IT leaders, CISOs, practitioners and other members of security solution buying teams.</p>
+          <p className="mb-3 leading-relaxed text-left">Cybersecurity content writing is how cybersecurity vendors and service providers engage in-market buyers including IT leaders, CISOs, practitioners and other members of security solution buying teams..
+          Effective cybersecurity marketing content is actually about 80% research. Getting the right message in front of buyers requires  a mix of product, market and comptitor research. </p>
           <div className="space-y-4">
             <p className="mb-3 leading-relaxed text-left">A good cybersecurity content writer, either hired directly or through an agency, is the core asset within every content marketing effort. This is true for established blue-chip companies and recently funded information security start-ups alike. Going to market with a solution or service depends partly on having the right sales and marketing content.</p>
             <p className="mb-3 leading-relaxed text-left">But content doesn&#39;t stop being relevant when your solution becomes more established. Cybersecurity sales cycles are typically long—traditionally, it takes between 12 and 24 months for deals to mature—and IT decision-makers are notoriously slow to consider a new product or vendor.</p>
