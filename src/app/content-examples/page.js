@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: 'Cybersecurity Content Examples',
   description: '30 content ideas for cybersecurity companies.',
@@ -282,13 +283,13 @@ export default function ContentExamples() {
           </div>
           <p className="mt-8 text-center text-base">
             Need more than examples?{' '}
-            <a href="/content-services" className="text-blue-800 underline hover:text-blue-600 transition">
+            <Link href="/content-services" className="text-blue-800 underline hover:text-blue-600 transition">
               See how to hire a cybersecurity content writer
-            </a>
+            </Link>
             {' '}or go back to the{' '}
-            <a href="/" className="text-blue-800 underline hover:text-blue-600 transition">
+            <Link href="/" className="text-blue-800 underline hover:text-blue-600 transition">
               main guide
-            </a>
+            </Link>
             .
           </p>
         </div>

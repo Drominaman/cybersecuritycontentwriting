@@ -4,6 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const processSteps = [
   {
@@ -169,13 +170,13 @@ export default function Services() {
         <PluginSupportSection points={pluginSupportContent} />
         <p className="text-center text-base mt-10 mb-10">
           Want to see real-world cybersecurity content in action? Check out our{' '}
-          <a href="/content-examples" className="text-blue-800 underline hover:text-blue-600 transition">
+          <Link href="/content-examples" className="text-blue-800 underline hover:text-blue-600 transition">
             30 Cybersecurity Content Examples
-          </a>
+          </Link>
           {' '}or return to the{' '}
-          <a href="/" className="text-blue-800 underline hover:text-blue-600 transition">
+          <Link href="/" className="text-blue-800 underline hover:text-blue-600 transition">
             main guide
-          </a>
+          </Link>
           .
         </p>
 
