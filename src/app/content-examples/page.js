@@ -307,9 +307,20 @@ export default function ContentExamples() {
                   <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
                   <p className="mb-4">{item.description}</p>
                   {item.url && (
-                    <a href={item.url} target="_blank" className="text-blue-200 underline">
-                      See example
-                    </a>
+                    item.url.startsWith("http") ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-200 underline"
+                      >
+                        See example
+                      </a>
+                    ) : (
+                      <Link href={item.url} className="text-blue-200 underline">
+                        See example
+                      </Link>
+                    )
                   )}
                 </div>
               ))}
