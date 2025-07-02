@@ -280,9 +280,18 @@ export default function ContentExamples() {
               To help you break away from the bland and get inspiration for your cybersecurity content marketing campaigns, we put together this list of content ideas built for cybersecurity marketers, packed with real examples from leading cybersecurity service providers and solution vendors.
             </p>
           </div>
+          <p className="mt-8 text-center text-base">
+            Need more than examples?{' '}
+            <a href="/content-services" className="text-blue-800 underline hover:text-blue-600 transition">
+              See how to hire a cybersecurity content writer
+            </a>
+            {' '}or go back to the{' '}
+            <a href="/" className="text-blue-800 underline hover:text-blue-600 transition">
+              main guide
+            </a>
+            .
+          </p>
         </div>
-
-        <div className="h-12"></div>
 
         <section className="mb-12">
           <div className="flex justify-center">

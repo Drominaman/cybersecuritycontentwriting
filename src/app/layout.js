@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
                     Content Examples
                   </Link>
                   <Link href="/content-services" className="px-3 py-2 text-lg font-medium rounded-md hover:bg-blue-700 transition-colors">
-                    Cybersecurity Content Writing Service
+                    Cybersecurity Content Writer Service
                   </Link>
                 </div>
               </nav>

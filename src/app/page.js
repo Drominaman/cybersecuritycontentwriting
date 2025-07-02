@@ -191,12 +191,24 @@ export default function Home() {
           </p>
         </div>
 
+
         <div className="card max-w-8xl mx-auto my-12 p-6 text-center prose prose-lg">
           <h2 id="writer-list" className="text-2xl font-semibold mb-4 leading-relaxed text-center">Hiring a Cybersecurity Content Writer? Read this first</h2>
           <div className="h-4"></div>
           <p className="mb-3 leading-relaxed text-center">A cybersecurity content writer service guide to help you stand out in a world filled with sub-par AI content.</p>
           <p className="mb-3 leading-relaxed text-center">This list is curated by cybersecurity content marketing pros at Content Visit - a cybersecurity content marketing agency with years of experience evaluating, hiring and deploying cybersecurity content writing talent.</p>
           <p className="mb-3 leading-relaxed text-center">We reviewed every cybersecurity content writer currently on the market, evaluated their pricing and service offers. Then we listed them here for your convenience.</p>
+          <p className="mt-8 text-center text-base">
+            Need inspiration? Browse our{' '}
+            <Link href="/content-examples" className="text-blue-800 underline hover:text-blue-600 transition">
+              cybersecurity content examples
+            </Link>
+            {' '}or{' '}
+            <Link href="/content-services" className="text-blue-800 underline hover:text-blue-600 transition">
+              learn more about hiring a cybersecurity content writer
+            </Link>
+            .
+          </p>
         </div>
 
         <section

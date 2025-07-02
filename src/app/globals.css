@@ -15,7 +15,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: #1f2937;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #24A8F7 0%, #59BDF4 100%);
   min-height: 100vh;
 }
 
@@ -41,7 +41,7 @@ body {
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #24A8F7, #59BDF4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
@@ -85,7 +85,7 @@ body {
   margin: 60px 0 30px 0;
   color: #1f2937;
   font-weight: 700;
-  border-bottom: 5px solid #667eea;
+  border-bottom: 5px solid #24A8F7;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -115,7 +115,7 @@ body {
 
 /* Content types card */
 .writer-card {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  background: linear-gradient(135deg, #f8fafc, #e8f6fe);
   border-radius: 10px;
   padding: 20px 40px;
   transition: all 0.3s ease;
@@ -123,12 +123,12 @@ body {
 
 .writer-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 8px 25px rgba(36, 168, 247, 0.15);
 }
 
 .writer-card.featured {
-  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
+  background: linear-gradient(135deg, #d1eeff, #b4e2fa);
+  box-shadow: 0 12px 30px rgba(36, 168, 247, 0.3);
   transform: scale(1.02);
 }
 
@@ -173,9 +173,9 @@ body {
 .faq-item {
   margin-bottom: 25px;
   padding: 20px;
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  background: linear-gradient(135deg, #e0f7fe, #c6e8fc);
   border-radius: 12px;
-  border-left: 4px solid #f59e0b;
+  border-left: 4px solid #24A8F7;
 }
 
 .faq-question {
@@ -191,7 +191,7 @@ body {
 }
 
  .cta-section {
-  background: linear-gradient(135deg, #1f2937, #374151);
+  background: linear-gradient(135deg, #24A8F7, #59BDF4);
   color: white;
   text-align: center;
   padding: 60px 24px;
@@ -228,7 +228,7 @@ body {
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #24A8F7, #59BDF4);
   color: white;
   padding: 15px 35px;
   border-radius: 50px;
@@ -237,12 +237,12 @@ body {
   font-size: 1.1rem;
   margin-top: 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(36, 168, 247, 0.4);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 8px 25px rgba(36, 168, 247, 0.6);
 }
 
 .award-badge {
