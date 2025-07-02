@@ -1,79 +1,74 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// import custom fonts using standard CSS instead
 import "./globals.css";
 import Link from 'next/link';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
-  title: "Cybersecurity Content Writing Service Guide",
+  metadataBase: new URL('https://www.cybersecuritycontentwriting.com'),
+  title: {
+    default: "Cybersecurity Content Writing Service Guide",
+    template: "%s | Cybersecurity Content Writing",
+  },
   description: "Ranked list of cybersecurity writers, content marketing services, and strategy insights by cybersecurity marketing agency Content Visit.",
 };
 
 export default function RootLayout({ children }) {
+  const year = new Date().getFullYear();
+
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* Skip link for accessibility */}
-        <a href="#main" className="sr-only focus:not-sr-only">
+    <html lang="en" className="scroll-smooth">
+      <body className="antialiased bg-gray-100">
+        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black">
           Skip to main content
         </a>
+        
+        <div className="flex flex-col min-h-screen">
+          <header className="bg-blue-600 text-white sticky top-0 z-30 shadow-md">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <nav className="flex items-center justify-center gap-8 h-16">
+                <Link href="/" className="text-base md:text-lg font-semibold hover:opacity-90 transition-opacity">
+                  Cybersecurity Content Writing
+                </Link>
 
-        {/* Site header */}
-        <header className="bg-blue-600 text-white">
-          <nav className="w-full px-4 py-4 flex items-center justify-between gap-8 navbar relative">
-            <Link href="/" className="text-2xl font-bold">
-              Cybersecurity Content Writing Guide
-            </Link>
-
-            {/* Mobile menu logic should go in a client component. */}
-
-            {/* Mobile Burger Menu */}
-            <div className="md:hidden flex items-center">
-              <details className="relative">
-                <summary className="list-none cursor-pointer flex items-center justify-center h-10 w-10 rounded-full hover:bg-blue-700 transition-colors">
-                  {/* Simple burger icon */}
-                  <span className="block w-6 h-1 bg-white mb-1 rounded"></span>
-                  <span className="block w-6 h-1 bg-white mb-1 rounded"></span>
-                  <span className="block w-6 h-1 bg-white rounded"></span>
-                </summary>
-                <div className="absolute right-0 mt-2 w-48 bg-white text-blue-600 rounded shadow-lg z-50 py-2 flex flex-col">
-                  <Link href="/content-examples" className="block px-4 py-3 text-lg font-bold hover:bg-blue-100">Content Examples</Link>
-                  <Link href="/content-services" className="block px-4 py-3 text-lg font-bold hover:bg-blue-100">Content Services</Link>
+                <div className="md:hidden">
+                  <details className="relative group">
+                    <summary className="list-none cursor-pointer p-2 -mr-2" aria-label="Open main menu">
+                      <svg className="h-7 w-7 group-open:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                      </svg>
+                      <svg className="h-7 w-7 hidden group-open:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </summary>
+                    <div className="absolute right-0 mt-2 w-56 origin-top-right bg-white text-blue-600 rounded-md shadow-lg z-50 py-2">
+                      <Link href="/content-examples" className="block px-4 py-3 text-lg font-semibold hover:bg-blue-50">Content Examples</Link>
+                      <Link href="/content-services" className="block px-4 py-3 text-lg font-semibold hover:bg-blue-50">Cybersecurity Content Writing Service</Link>
+                    </div>
+                  </details>
                 </div>
-              </details>
+
+                <div className="hidden md:flex items-center gap-12">
+                  <Link href="/content-examples" className="px-3 py-2 text-lg font-medium rounded-md hover:bg-blue-700 transition-colors">
+                    Content Examples
+                  </Link>
+                  <Link href="/content-services" className="px-3 py-2 text-lg font-medium rounded-md hover:bg-blue-700 transition-colors">
+                    Cybersecurity Content Writing Service
+                  </Link>
+                </div>
+              </nav>
             </div>
+          </header>
 
-            {/* Desktop menu */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link href="/content-examples" className="text-lg font-bold hover:underline">
-                Content Examples
-              </Link>
-              <Link href="/content-services" className="text-lg font-bold hover:underline">
-                Content Services
-              </Link>
+          <main id="main" className="flex-grow px-4 sm:px-6 lg:px-8 space-y-24">
+            {children}
+          </main>
+
+          <footer className="bg-gray-50 py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-600">
+              &copy; {year} Content Visit. All rights reserved.
             </div>
-          </nav>
-        </header>
-
-        {/* Main content area */}
-        <main id="main" className="bg-white bg-opacity-90 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl w-full px-6 py-12">
-          {children}
-        </main>
-
-        {/* Global footer */}
-        <footer className="bg-gray-50 py-12">
-          <div className="w-full text-center text-sm text-gray-600">
-            &copy; {new Date().getFullYear()} Content Visit. All rights reserved.
-          </div>
-        </footer>
+          </footer>
+        </div>
       </body>
     </html>
   );

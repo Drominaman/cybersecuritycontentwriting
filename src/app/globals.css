@@ -33,7 +33,7 @@ body {
   border-radius: 10px;
   padding: 60px 40px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 48px; /* 3rem vertical spacing */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -72,6 +72,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 48px; /* 3rem vertical spacing */
 }
 
 .card:hover {
@@ -95,7 +96,6 @@ body {
   color: #374151;
   font-weight: 600;
   text-align: center;
-  text-align-last: left;
 }
 
 /* 6. Grid layouts */
@@ -137,6 +137,7 @@ body {
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .writer-details {
@@ -150,6 +151,7 @@ body {
 /* 7. FAQ & CTA Sections */
 .faq-section {
   margin-top: 40px;
+  margin-bottom: 48px;
 }
 
 .faq-contact-form {
@@ -188,13 +190,21 @@ body {
   line-height: 1.6;
 }
 
-.cta-section {
+ .cta-section {
   background: linear-gradient(135deg, #1f2937, #374151);
   color: white;
   text-align: center;
-  padding: 50px 40px;
-  border-radius: 20px;
-  margin-top: 40px;
+  padding: 60px 24px;
+  border-radius: 0;
+  margin-top: 60px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.cta-section > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-section h2 {
@@ -209,7 +219,10 @@ body {
   align-items: center;
 }
 
-.cta-section form input {
+.cta-section form input,
+.cta-section form textarea {
+  width: 100%;
+  max-width: 500px;
   margin-bottom: 20px;
 }
 

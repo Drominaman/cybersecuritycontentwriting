@@ -90,118 +90,89 @@ export default function Home() {
     },
   ];
 
+  // Structured data schemas
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Top 10 Cybersecurity Content Writers",
+    "itemListElement": writers.map((writer, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": writer.name,
+      "url": writer.website,
+    })),
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CybersecurityContentWriting.com",
+    "url": "https://cybersecuritycontentwriting.com",
+    "logo": "https://cybersecuritycontentwriting.com/logo.webp",
+    "description": "CybersecurityContentWriting.com is a service guide and industry roundup showcasing top cybersecurity content writers and agencies.",
+    "sameAs": [
+      "https://www.linkedin.com/company/content-visit"
+    ]
+  };
+
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cybersecurity Content Writing Services Guide",
+    "url": "https://cybersecuritycontentwriting.com",
+    "description": "A curated guide to the best cybersecurity content writers and agencies helping security vendors with technical and strategic content.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CybersecurityContentWriting.com",
+      "url": "https://cybersecuritycontentwriting.com"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Head>
+        {/* --- Primary Meta Tags --- */}
         <title>Cybersecurity Content Writer Service Guide</title>
-        <meta name="description" content="Read on for our cybersecurity content writing guide, content writer round up (with reviews) plus a service guide to help you stand out in a world filled with sub-par AI content.
-" />
+        <meta name="description" content="A curated guide to the best cybersecurity content writers, agencies, and services helping security vendors stand out." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* --- Favicon --- */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* --- Canonical URL --- */}
         <link rel="canonical" href="https://www.cybersecuritycontentwriting.com" />
+
+        {/* --- Open Graph / Facebook / LinkedIn Meta Tags --- */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.cybersecuritycontentwriting.com" />
+        <meta property="og:title" content="Cybersecurity Content Writer Service Guide" />
+        <meta property="og:description" content="A curated guide to the best cybersecurity content writers, agencies, and services." />
+        <meta property="og:image" content="https://www.cybersecuritycontentwriting.com/og-image.png" />
+        
+        {/* --- Twitter Meta Tags --- */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.cybersecuritycontentwriting.com" />
+        <meta name="twitter:title" content="Cybersecurity Content Writer Service Guide" />
+        <meta name="twitter:description" content="A curated guide to the best cybersecurity content writers, agencies, and services." />
+        <meta name="twitter:image" content="https://www.cybersecuritycontentwriting.com/og-image.png" />
+
+        {/* --- Structured Data (JSON-LD) --- */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "CybersecurityContentWriting.com",
-              "url": "https://cybersecuritycontentwriting.com",
-              "logo": "https://cybersecuritycontentwriting.com/logo.webp",
-              "description": "CybersecurityContentWriting.com is a service guide and industry roundup showcasing top cybersecurity content writers and agencies.",
-              "sameAs": [
-                "https://www.linkedin.com/company/content-visit"
-              ]
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Cybersecurity Content Writing Services Guide",
-              "url": "https://cybersecuritycontentwriting.com",
-              "description": "A curated guide to the best cybersecurity content writers and agencies helping security vendors with technical and strategic content.",
-              "inLanguage": "en",
-              "publisher": {
-                "@type": "Organization",
-                "name": "CybersecurityContentWriting.com",
-                "url": "https://cybersecuritycontentwriting.com"
-              }
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "Top 10 Cybersecurity Content Writers",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Laura Martisiute / Content Visit",
-                  "url": "https://www.contentvisit.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Rodika Tollefson",
-                  "url": "https://seattletechnologywriter.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Amanda Scheldt",
-                  "url": "https://infinitycontentsolutions.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 4,
-                  "name": "Karen Walsh / Allegro Solutions",
-                  "url": "https://allegrosolutionsllc.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 5,
-                  "name": "Pete Hugh",
-                  "url": "https://petehugh.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 6,
-                  "name": "Sara J. Nguyen",
-                  "url": "https://sarajnguyen.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 7,
-                  "name": "Lewis Commercial Writing",
-                  "url": "https://lewiscommercialwriting.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 8,
-                  "name": "Alice Hollis",
-                  "url": "https://alicehollis.co.uk"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 9,
-                  "name": "Ian Correa",
-                  "url": "https://www.linkedin.com/in/ian-correa"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 10,
-                  "name": "Lea Rabinowitz / &content marketing",
-                  "url": "https://andcontentmarketing.com"
-                }
-              ]
-            })
+              "@graph": [
+                organizationSchema,
+                webPageSchema,
+                itemListSchema,
+              ],
+            }),
           }}
         />
       </Head>
@@ -209,42 +180,88 @@ export default function Home() {
       
 
 
-      <main className="w-full p-0 space-y-8">
-        <div className="hero">
-        <h1 className="text-4xl font-bold mb-6">
-          Cybersecurity Content Writer Guide
-        </h1>
-        <section className="prose prose-lg max-w-none">
-          <h2 className="text-2xl font-semibold mb-4 leading-relaxed">Hiring a Cybersecurity Content Writer? Read this first</h2>
-          <div className="h-4"></div>
-          <p className="mb-3 leading-relaxed text-left">A cybersecurity content writer service guide to help you stand out in a world filled with sub-par AI content.</p>
-          <p className="mb-3 leading-relaxed text-left">This list is curated by cybersecurity content marketing pros at Content Visit - a cybersecurity content marketing agency with years of experience evaluating, hiring and deploying cybersecurity content writing talent.</p>
-          <p className="mb-3 leading-relaxed text-left">We reviewed every cybersecurity content writer currently on the market, evaluated their pricing and service offers. Then we listed them here for your convenience.</p>
-          <div className="card">
-            <h3 className="text-xl font-semibold mt-6 mb-4 leading-relaxed">10 Best Cybersecurity Content Writers for Hire Right Now</h3>
-            <div className="h-4"></div>
-            <p className="mb-3 leading-relaxed text-left">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we&rsquo;ve looked at hundreds of writers&#39; CVs and offers.</p>
-            <p className="mb-3 leading-relaxed text-left">Here are ten that stood out to us, we also gave each ranking based on our assessment of their skills as a cybersecurity content writer plus external accreditations.</p>
-            <div className="mt-6">
-            
-            </div>
-            <section className="writer-card-section">
-              <div className="writer-grid">
-                {writers.map((writer) => (
-                  <WriterCard
-                    key={writer.name || 'unknown'}
-                    writer={writer}
-                    highlighted={writer.featured}
-                  />
-                ))}
-              </div>
-            </section>
-          </div>
-        </section>
+      <main className="w-full p-10 space-y-16">
+        <div className="hero my-12">
+          <h1 className="text-4xl font-bold mb-2">
+            Cybersecurity Content Writer Guide
+          </h1>
+          <p className="text-gray-500 text-sm mb-4">
+            Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
         </div>
 
-        <div className="card" id="what-is-cybersecurity-content-writing">
-          <h2 className="text-2xl font-semibold mb-4">What Is Cybersecurity Content Writing?</h2>
+        <div className="card max-w-8xl mx-auto my-12 p-6 text-center prose prose-lg">
+          <h2 id="writer-list" className="text-2xl font-semibold mb-4 leading-relaxed text-center">Hiring a Cybersecurity Content Writer? Read this first</h2>
+          <div className="h-4"></div>
+          <p className="mb-3 leading-relaxed text-center">A cybersecurity content writer service guide to help you stand out in a world filled with sub-par AI content.</p>
+          <p className="mb-3 leading-relaxed text-center">This list is curated by cybersecurity content marketing pros at Content Visit - a cybersecurity content marketing agency with years of experience evaluating, hiring and deploying cybersecurity content writing talent.</p>
+          <p className="mb-3 leading-relaxed text-center">We reviewed every cybersecurity content writer currently on the market, evaluated their pricing and service offers. Then we listed them here for your convenience.</p>
+        </div>
+
+        <section
+          id="table-of-contents"
+          aria-label="Table of contents"
+          className="card max-w-8xl mx-auto my-12 p-6 text-center"
+        >
+          <h3 className="text-xl font-bold mb-2 text-center w-full">In this Guide:</h3>
+          <ul className="flex flex-col gap-3 items-center list-disc list-inside text-blue-600 text-base leading-relaxed">
+            <li>
+              <a href="#writer-list" className="hover:underline">Top 10 Cybersecurity Writers</a>
+            </li>
+            <li>
+              <a href="#what-is-cybersecurity-content-writing" className="hover:underline">What Is Cybersecurity Content Writing?</a>
+            </li>
+            <li>
+              <a href="#content-types" className="hover:underline">Common Content Types</a>
+            </li>
+            <li>
+              <a href="#faq" className="hover:underline">Frequently Asked Questions (F.A.Q.)</a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:underline">Get Professional Writing Support</a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="writer-list" className="my-12">
+          <div className="card my-12">
+            <h3 className="text-xl font-semibold mt-6 mb-4 leading-relaxed">10 Best Cybersecurity Content Writers for Hire Right Now</h3>
+            <p className="mb-3 leading-relaxed text-left">This is our current list of cybersecurity content writers based on extensive online research and our own networks. Over the past five years, we’ve looked at hundreds of writers' CVs and offers.</p>
+            <p className="mb-3 leading-relaxed text-left">Here are ten that stood out to us. We also gave each a ranking based on our assessment of their skills as a cybersecurity content writer plus external accreditations.</p>
+
+            <div className="writer-grid mt-6">
+              {writers.map((writer) => (
+                <WriterCard
+                  key={writer.name || 'unknown'}
+                  writer={writer}
+                  highlighted={writer.featured}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="Word From the Curator" className="card max-w-8xl mx-auto my-12 flex flex-col md:flex-row items-center gap-20">
+          <div className="flex-shrink-0">
+            <Image 
+              src="/Laura-Martisiute.png"
+              alt="Laura Martisiute, founder of Content Visit"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">A Word From the Curator</h3>
+            <p className="mt-2 text-gray-700">
+              This list was personally researched and compiled by Laura Martisiute, founder of{' '}
+              <a href="https://www.contentvisit.com" target="_blank" rel="noopener" className="font-semibold text-blue-600 underline">Content Visit</a>. 
+              With over a decade of experience in B2B tech marketing and a Cybersecurity Excellence Award under her belt, she has vetted hundreds of writers to identify the talent that truly understands the security space.
+            </p>
+          </div>
+        </section>
+        <div className="card my-12" id="what-is-cybersecurity-content-writing">
+          <h2 id="what-is-cybersecurity-content-writing" className="text-2xl font-semibold mb-4">What Is Cybersecurity Content Writing?</h2>
           <p className="mb-3 leading-relaxed text-left">Cybersecurity content writing is how cybersecurity vendors and service providers engage in-market buyers including IT leaders, CISOs, practitioners and other members of security solution buying teams..
           Effective cybersecurity marketing content is actually about 80% research. Getting the right message in front of buyers requires  a mix of product, market and comptitor research. </p>
           <div className="space-y-4">
@@ -270,13 +287,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card my-12">
           <h2 className="text-2xl font-semibold mb-4">Why is Cybersecurity Contnt Writing Different from General Tech Writing</h2>
           <p className="mb-3 leading-relaxed text-left">Cybersecurity content writing combines product with market knowledge. It&#39;s how you connect cybersecurity buyer personas with solutions to their pain points. It&#39;s not about explaining how a solution works but convicing someone that a solution makes sense for them and is worth considering as an addition to their security program. In a market of over 5000 security solutions, this is a critical task.</p>
         </div>
 
-        <div className="card">
-          <h2 className="text-2xl font-semibold mb-4">Content Types that a Cybersecurity Content Writer Creates</h2>
+        <div className="card my-12">
+          <h2 id="content-types" className="text-2xl font-semibold mb-4">Content Types that a Cybersecurity Content Writer Creates</h2>
           <div className="writer-grid">
             <Link href="/content-examples#blog-posts" className="writer-card block">
               <div className="writer-name">📘 Blog Posts</div>
@@ -333,13 +350,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card my-12">
           <h2 className="text-2xl font-semibold mb-4">Cybersecurity content writing process</h2>
           <p className="mb-3 leading-relaxed text-left">Start with expert insights from talking to internal subject matter experts. Add extensive market research. Audit compeitor content positing and messanging to find content gaps. Match content to an intended action/next step i.e download a whitepaper. Plan for a particular distribution method i.e an SEO keyword to rank for. Then start writing. Plus don&#39;t forget to add graphcis.  </p>
         </div>
 
-        <div className="card">
-          <h3 className="text-xl font-semibold mt-6 mb-2">Cybersecurity Content Writing F.A.Q</h3>
+        <div className="card my-12">
+          <h2 id="faq" className="text-2xl font-semibold mt-6 mb-2">Cybersecurity Content Writing F.A.Q</h2>
           <div className="faq-section">
           <p className="mb-4 faq-answer">We get a lot of questions from brands about whether they still need to hire a cybersecurity content writer and other factors.</p>
           <div className="h-6"></div>
@@ -412,6 +429,7 @@ export default function Home() {
             <a href="https://www.contentvisit.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Get cybersecurity content writing support today.</a>
           </p>
           <div>
+            
             <div>
               <h4 className="font-semibold faq-question">How do you write cybersecurity content if you&#39;re not a cybersecurity practitioner</h4>
               <p className="faq-answer">You need to be technical and have a broad understanding of the general market plus a specific understanding of the personas and market segment you are talking. Then partner directly with SMEs and review the product you are marketing.</p>
@@ -439,7 +457,7 @@ export default function Home() {
         </div>
         <div className="h-3"></div>
 
-        <div className="card">
+        <div className="card my-12">
           <p className="mb-3 leading-relaxed text-left">
             Need a cybersecurity content writer who actually knows the space? ContentVisit specializes in writing for security vendors, startups, and technical teams. 
           </p>
@@ -451,21 +469,21 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="cta-section" id="contact">
+        <div className="cta-section my-12" id="contact">
           <h2 className="text-2xl font-semibold mb-4">Get best of breed cybersecurity content writing</h2>
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center mb-12">
             <p className="mb-3 leading-relaxed text-center">Ready to create content that drives actual results? Drop us a line.</p>
           </div>
           <div className="h-2"></div>
           <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-8">
-            <form action="mailto:contact@contentvisit.com" method="POST" encType="text/plain" className="space-y-6 w-full max-w-md">
+            <form action="mailto:contact@contentvisit.com" method="POST" encType="text/plain" className="space-y-6 w-full max-w-md mb-12">
               <input type="text" name="name" placeholder="Your Name" className="w-full border p-3 rounded-xl" />
               <input type="email" name="email" placeholder="Your Email" className="w-full border p-3 rounded-xl" />
               <textarea name="message" placeholder="Tell us about your project..." className="w-full border p-3 rounded-xl" rows="4"></textarea>
               <button type="submit" className="cta-button">Send Message</button>
             </form>
             <div className="h-8"></div>
-            <div className="w-full max-w-[200px]">
+            <div className="w-full max-w-[200px] mb-12">
               <Image 
                 src="/cybersecurity_awards_2025_gold.png"
                 alt="Cybersecurity Excellence Awards 2025 Winner"
@@ -477,6 +495,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      
 
       <footer className="p-8 text-center text-sm text-gray-500">
         <nav className="space-x-4">
