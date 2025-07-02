@@ -66,36 +66,53 @@ export default function Services() {
             <span className="font-bold text-blue-700">Perfect for early-stage cybersecurity vendors:</span> Get your story straight, generate demand, and launch campaigns that work whether you’re launching, pivoting, or just stuck.
           </p>
         </section>
+        <div className="my-8 text-center">
+          <h3 className="text-2xl font-semibold">We can help you</h3>
+        </div>
+
+        
 
         {/* Use Cases / Card List */}
         <section className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
           <div className="writer-card">
             <h4 className="font-bold mb-2">1. Develop SEO Content that converts</h4>
-            <p>Forget AI. If you want real people to find and engage with your brand on search engines (including AI powered search engines like Perplexity) you need expert driven content. <a href="#">Learn more</a></p>
+            <p>
+              Forget AI. If you want real people to find and engage with your brand on search engines (including AI powered search engines like Perplexity) you need expert driven content. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a>
+            </p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">2. Write cybersecurity whitepapers and solution briefs</h4>
-            <p>To convert leads, your organization needs target audience-focused sales collateral throughout the buyer journey from prospect to MQL to SQL and into contract with your company.</p>
+            <p>To convert leads, your organization needs target audience-focused sales collateral throughout the buyer journey from prospect to MQL to SQL and into contract with your company. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">3. Copywrite security product or service landing pages</h4>
-            <p>A cybersecurity marketing writer with copywriting experience should be able to take a brief and work with you to craft copy that is clear, easy to read and feature the right CTAs.</p>
+            <p>A cybersecurity marketing writer with copywriting experience should be able to take a brief and work with you to craft copy that is clear, easy to read and feature the right CTAs. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">4. Own your audience with a newsletter</h4>
-            <p>Newsletters are one of the highest ROI digital marketing investments. A cybersecurity marketing writer is key to making them work for your business.</p>
+            <p>Newsletters are one of the highest ROI digital marketing investments. A cybersecurity marketing writer is key to making them work for your business. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">5. Ghostwrite Cybersecurity Guest Posts</h4>
-            <p>Guest posting can boost your domain authority and put your business in front of decision-makers. A skilled writer can ghostwrite for your SMEs.</p>
+            <p>Guest posting can boost your domain authority and put your business in front of decision-makers. A skilled writer can ghostwrite for your SMEs. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">6. Repurpose marketing content and protect your investment</h4>
-            <p>Quality marketing content can be updated or repurposed. A writer can transform your insights into new content formats for greater ROI.</p>
+            <p>Quality marketing content can be updated or repurposed. A writer can transform your insights into new content formats for greater ROI. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
           </div>
           <div className="writer-card">
             <h4 className="font-bold mb-2">7. Create cybersecurity sales scripts and webinars</h4>
-            <p>Keep webinars and sales scripts sharp. A cyber security writer can combine research and your talking points to create outlines and scripts.</p>
+            <p>Keep webinars and sales scripts sharp. A cyber security writer can combine research and your talking points to create outlines and scripts. <a href="https://www.contentvisit.com" className="text-blue-700 font-semibold">Learn more</a></p>
+          </div>
+        </section>
+
+        <section className="trusted-by max-w-5xl mx-auto my-8">
+          <h3 className="text-xl font-semibold mb-4 text-center">Trusted by</h3>
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            <img src="/Double_Secret_Octopus.png" alt="Double Secret Octopus" className="h-24 object-contain" />
+            <img src="/Morphisec.jfif.jpeg" alt="Morphisec" className="h-24 object-contain" />
+            <img src="/Deleteme.png" alt="Deleteme" className="h-24 object-contain" />
+            <img src="/Zz1hODJkMjIxOGU1YTgxMWVjYWM2YzI2MjNiMTY1ZDY4Nw__.png.webp" alt="Partner Logo" className="h-24 object-contain" />
           </div>
         </section>
 
@@ -110,9 +127,9 @@ export default function Services() {
               </div>
             </li>
             <li>
-              <b>How much does a cybersecurity writer cost?</b>
+              <b>How much does your cybersecurity content writing service cost?</b>
               <div>
-                Typically expect to pay between $70 and $150 per hour for a skilled writer with &gt;5 years of experience. 
+                Pricing varies and we are flexable. Retainer pricing for full content marketing starts from as little as $500 per month. 
               </div>
             </li>
             <li>
@@ -144,16 +161,17 @@ export default function Services() {
       </main>
 
       {/* CTA SECTION */}
-      <div className="cta-section" id="contact">
-        <div className="w-full flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Get best of breed cybersecurity content writing</h2>
-          <p className="mb-3 leading-relaxed text-center max-w-xl">Ready to create content that drives actual results? Drop us a line.</p>
-          <div className="h-2"></div>
-          <form action="mailto:contact@contentvisit.com" method="POST" encType="text/plain" className="space-y-6 w-full max-w-md">
-            <input type="text" name="name" placeholder="Your Name" className="w-full border p-3 rounded-xl" />
-            <input type="email" name="email" placeholder="Your Email" className="w-full border p-3 rounded-xl" />
-            <textarea name="message" placeholder="Tell us about your project..." className="w-full border p-3 rounded-xl" rows="4"></textarea>
-            <button type="submit" className="cta-button">Send Message</button>
+      <div className="cta-section w-full px-6 py-20" id="contact">
+        <div className="max-w-xl mx-auto text-center space-y-10">
+          <div>
+            <h2 className="text-4xl font-extrabold mb-2 text-white">Get best of breed cybersecurity content writing</h2>
+          </div>
+
+          <form action="mailto:contact@contentvisit.com" method="POST" encType="text/plain" className="space-y-4 w-full text-center">
+            <input type="text" name="who" placeholder="Wh " className="w-full border border-white bg-transparent p-3 rounded-xl text-white placeholder-white/60" />
+            <input type="email" name="email" placeholder="Your Email" className="w-full border border-white bg-transparent p-3 rounded-xl text-white placeholder-white/60" />
+            <textarea name="message" placeholder="Tell us about your project..." rows="4" className="w-full border border-white bg-transparent p-3 rounded-xl text-white placeholder-white/60"></textarea>
+            <button type="submit" className="cta-button w-full">Send Message</button>
           </form>
         </div>
       </div>
