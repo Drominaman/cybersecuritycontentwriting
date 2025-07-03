@@ -1,8 +1,8 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -63,7 +63,6 @@ export default function Services() {
         </h1>
       </div>
 
-      <TrustedByCarousel />
 
 
       {/* SERVICE SECTIONS */}
@@ -114,6 +113,21 @@ export default function Services() {
             <span className="font-bold text-blue-700">Perfect for early-stage cybersecurity vendors:</span> Get your story straight, generate demand, and launch campaigns that work whether you’re launching, pivoting, or just stuck.
           </p>
         </section>
+
+        {/* Comparison Table Section */}
+        <section className="w-full flex flex-col items-center py-16 bg-white">
+          <h3 className="text-2xl font-bold text-blue-800 mb-14 text-center">
+            How Content Visit Compares
+          </h3>
+                     <div className="h-6"></div>
+
+          <div className="w-full max-w-5xl px-2 overflow-x-auto">
+            <ComparisonTable />
+          </div>
+                     <div className="h-6"></div>
+
+        </section>
+        <TrustedByCarousel />
         <div className="my-8 text-center">
           <h3 className="text-2xl font-semibold">We can help you</h3>
         </div>
@@ -475,5 +489,70 @@ function FunnelSupportSection({ image, alt }) {
         </div>
       </div>
     </section>
+  );
+}
+
+function ComparisonTable() {
+  const columns = [
+    { key: "Content Visit", label: "Content Visit" },
+    { key: "Internal Team", label: "Internal Team" },
+    { key: "Freelancer/AI", label: "Freelancer/AI" }
+  ];
+  
+  const rows = [
+    { label: "Cost", values: { "Content Visit": "From $500/month", "Internal Team": "$$$$", "Freelancer/AI": "Varies" } },
+    { label: "Quality", values: { "Content Visit": "Expert, security native", "Internal Team": "Generalist or part-time", "Freelancer/AI": "Inconsistent" } },
+    { label: "Speed/Process", values: { "Content Visit": "Fast, proven system", "Internal Team": "Slow, needs ramp", "Freelancer/AI": "Unpredictable" } },
+    { label: "Security/Trust", values: { "Content Visit": "Trusted, NDA-ready", "Internal Team": "Yes", "Freelancer/AI": "Risky, unvetted" } },
+    { label: "Strategy", values: { "Content Visit": "Aligned to GTM", "Internal Team": "Maybe", "Freelancer/AI": "Rarely" } }
+  ];
+  return (
+    <div>
+      <div className="w-full overflow-x-auto">
+        <table className="w-full border-separate border-spacing-0 text-lg">
+          <thead>
+            <tr>
+              <th className="px-8 py-10 text-left font-semibold border-b-2 border-blue-200 bg-white"></th>
+              {columns.map(col => (
+                <th
+                  key={col.key}
+                  className={`px-8 py-10 font-semibold text-center border-b-2 border-blue-200
+                    ${col.key === "Content Visit"
+                      ? "bg-blue-600 text-white font-bold shadow-lg"
+                      : "bg-blue-50 text-blue-800"}
+                  `}
+                >
+                  {col.label}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colSpan={columns.length + 1}>
+                <div className="h-8"></div>
+              </td>
+            </tr>
+            {rows.map(row => (
+              <tr key={row.label} className="border-b-8 border-white border-t border-blue-100">
+                <td className="px-8 py-10 font-semibold bg-white">{row.label}</td>
+                {columns.map(col => (
+                  <td
+                    key={col.key}
+                    className={`px-8 py-10 text-center border-l border-blue-100
+                      ${col.key === "Content Visit"
+                        ? "bg-blue-600 text-white font-bold shadow-lg"
+                        : "bg-blue-50 text-blue-800"}
+                    `}
+                  >
+                    {row.values[col.key]}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 }
