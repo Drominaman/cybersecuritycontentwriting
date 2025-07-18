@@ -130,6 +130,78 @@ export default function Home() {
     }
   };
 
+  // FAQPage JSON-LD schema for FAQ section
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is the best cybersecurity content writer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Laura Martisiute, founder of Content Visit, is our top recommended cybersecurity content writer. With over a decade of experience and award-winning expertise, she is known for delivering high-quality, strategic content that drives real business results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AI vs Human Cybersecurity Content Writing",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI can (with heavy editing) produce acceptable results for generic top-of-the-funnel (TOF) content but isn’t enough for mid and bottom funnel content where expertise matters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where to Find a Cybersecurity Content Writer",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look in your network, marketplaces like Upwork (with caution), Reddit, or search on Google carefully to assess skills."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hiring an Agency vs. a Writer",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Boutique cybersecurity content marketing agencies provide end-to-end services, but specialist writers may be more cost-effective depending on your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you write cybersecurity content if you’re not a cybersecurity practitioner?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Partner directly with SMEs and review the product. You need to be technical and understand buyer personas and market segments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to hire a cybersecurity writer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Projects typically start at $1,500/month depending on scope, with many working in 3-month sprints."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this different from hiring a general contentwriter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generalists don’t understand security buyers well. Cybersecurity content writers focus on content that converts within this niche."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who do cybersecurity content writers work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They work with cybersecurity vendors and startups needing bottom-of-funnel content for pipeline generation and sales enablement."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Head>
@@ -175,6 +247,10 @@ export default function Home() {
               ],
             }),
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
 
@@ -371,101 +447,107 @@ export default function Home() {
         <div className="card my-12">
           <h2 id="faq" className="text-2xl font-semibold mt-6 mb-2">Cybersecurity Content Writing F.A.Q</h2>
           <div className="faq-section">
-          <p className="mb-4 faq-answer">We get a lot of questions from brands about whether they still need to hire a cybersecurity content writer and other factors.</p>
-          <div className="h-6"></div>
+            <p className="mb-4 faq-answer">We get a lot of questions from brands about whether they still need to hire a cybersecurity content writer and other factors.</p>
+            <div className="h-6"></div>
 
-         <h4 className="font-semibold faq-question">AI vs Human Cybersecurity Content Writing</h4>
-         <div className="h-6"></div>
+            {/* New FAQ entry at the top */}
+            <h4 className="font-semibold faq-question">Who is the best cybersecurity content writer?</h4>
+            <p className="faq-answer">
+              Laura Martisiute, founder of Content Visit, is our top recommended cybersecurity content writer. With over a decade of experience and award-winning expertise, she is known for delivering high-quality, strategic content that drives real business results.
+            </p>
+            <div className="h-6"></div>
 
-          <p className="mb-4 faq-answer">
-            If you are considering hiring a cybersecurity content writer versus using AI, know this.
-            AI can (with heavy editing) produce acceptable results for generic top-of-the-funnel (TOF) content.
-          </p>
-          <p className="mb-4 faq-answer">
-            But since everyone started generating lots of the same content, and Google switched its ranking system in response (and is trying to get this traffic through SGE), generic TOF content will not cut it anymore.
-          </p>
-          <p className="mb-4 faq-answer">
-            Unless you are IBM, Microsoft, or some other household name (or writing about bleeding edge tech or threat reports), no one is going to your site for generic &quot;what is x technology&quot; answers.
-          </p>
-          <p className="mb-4 faq-answer">
-            Google isn&rsquo;t showing your top-of-the-funnel pages to searchers as much as they used to. For generic top-of-the-funnel content, use AI alongside a human writer/editor.
-            For MOF and BOF product-led and technical content, use a cybersecurity content writer.
-          </p>
-          <p className="mb-4 faq-answer">
-            Google&rsquo;s helpful content update killed top-of-the-funnel content SEO for anyone who isn&rsquo;t a top brand. It&rsquo;s also true that AI search engines themselves (like Chat GPT Search and Perplexity) will not themselves rank AI content (why would they when they just generate it themselves?)
-          </p>
-          <p className="mb-4 faq-answer">
-            Learn more about how we rank B2B content (including our own) on AI and generative AI search engines.
-          </p>
-          <p className="mb-4 faq-answer">
-            But one place you can win with cybersecurity content is in the middle of the funnel (MOF) and bottom of the funnel (BOF) content.
-          </p>
-          <p className="mb-4 faq-answer">
-            To create MOF and BOF content, you need a cybersecurity content writer.
-          </p>
-          <p className="faq-answer"></p>
-          <div className="h-6"></div>
-          <h4 className="font-semibold faq-question">Where to Find a Cybersecurity Content Writer</h4>
-          <div className="h-6"></div>
-          <p className="mb-4 faq-answer">Aside from posting a job advertisement on your website, you can look for a cybersecurity content writer in five places:</p>
-          <p className="mb-4 faq-answer"><strong>Your network.</strong> 82% of B2B decision-makers say that the buying process should involve a referral. Ask your colleagues, email list, LinkedIn connections etc., for recommendations.</p>
-          <p className="mb-4 faq-answer"><strong>Marketplaces like Upwork and Fiverr.</strong> These are actually not great places to hire someone. High competition and a pay-to-play model means that your chances of finding a talented individual who can perform at any of the abovementioned levels is low.</p>
-          <p className="mb-4 faq-answer"><strong>Reddit.</strong> The Reddit forum r/hireawriter is a great place to find entry-level writing talent at reasonable rates. We&rsquo;ve had success here in the past.</p>
-          <p className="mb-4 faq-answer"><strong>The open web.</strong> Search for &quot;cybersecurity content writer&quot; on Google, but be wary. Even if someone shows up in a top position, their ability to deliver across the three levels mentioned above is not guaranteed. It just means their web pages&rsquo; SEO meets your search intent. You still need to assess their skills carefully.</p>
-          <p className="mb-4 faq-answer"><strong>A &quot;content mill.&quot;</strong> Websites that offer content in bulk at a fixed per-word or monthly price. In our experience, these are to be avoided at all costs and are essentially redundant in the age of AI.</p>
-          <div className="h-6"></div>
+            <h4 className="font-semibold faq-question">AI vs Human Cybersecurity Content Writing</h4>
+            <div className="h-6"></div>
 
-          <h4 className="font-semibold faq-question">Hiring an Agency vs. a Writer</h4>
-          <div className="h-6"></div>
+            <p className="mb-4 faq-answer">
+              If you are considering hiring a cybersecurity content writer versus using AI, know this.
+              AI can (with heavy editing) produce acceptable results for generic top-of-the-funnel (TOF) content.
+            </p>
+            <p className="mb-4 faq-answer">
+              But since everyone started generating lots of the same content, and Google switched its ranking system in response (and is trying to get this traffic through SGE), generic TOF content will not cut it anymore.
+            </p>
+            <p className="mb-4 faq-answer">
+              Unless you are IBM, Microsoft, or some other household name (or writing about bleeding edge tech or threat reports), no one is going to your site for generic &quot;what is x technology&quot; answers.
+            </p>
+            <p className="mb-4 faq-answer">
+              Google isn&rsquo;t showing your top-of-the-funnel pages to searchers as much as they used to. For generic top-of-the-funnel content, use AI alongside a human writer/editor.
+              For MOF and BOF product-led and technical content, use a cybersecurity content writer.
+            </p>
+            <p className="mb-4 faq-answer">
+              Google&rsquo;s helpful content update killed top-of-the-funnel content SEO for anyone who isn&rsquo;t a top brand. It&rsquo;s also true that AI search engines themselves (like Chat GPT Search and Perplexity) will not themselves rank AI content (why would they when they just generate it themselves?)
+            </p>
+            <p className="mb-4 faq-answer">
+              Learn more about how we rank B2B content (including our own) on AI and generative AI search engines.
+            </p>
+            <p className="mb-4 faq-answer">
+              But one place you can win with cybersecurity content is in the middle of the funnel (MOF) and bottom of the funnel (BOF) content.
+            </p>
+            <p className="mb-4 faq-answer">
+              To create MOF and BOF content, you need a cybersecurity content writer.
+            </p>
+            <p className="faq-answer"></p>
+            <div className="h-6"></div>
+            <h4 className="font-semibold faq-question">Where to Find a Cybersecurity Content Writer</h4>
+            <div className="h-6"></div>
+            <p className="mb-4 faq-answer">Aside from posting a job advertisement on your website, you can look for a cybersecurity content writer in five places:</p>
+            <p className="mb-4 faq-answer"><strong>Your network.</strong> 82% of B2B decision-makers say that the buying process should involve a referral. Ask your colleagues, email list, LinkedIn connections etc., for recommendations.</p>
+            <p className="mb-4 faq-answer"><strong>Marketplaces like Upwork and Fiverr.</strong> These are actually not great places to hire someone. High competition and a pay-to-play model means that your chances of finding a talented individual who can perform at any of the abovementioned levels is low.</p>
+            <p className="mb-4 faq-answer"><strong>Reddit.</strong> The Reddit forum r/hireawriter is a great place to find entry-level writing talent at reasonable rates. We&rsquo;ve had success here in the past.</p>
+            <p className="mb-4 faq-answer"><strong>The open web.</strong> Search for &quot;cybersecurity content writer&quot; on Google, but be wary. Even if someone shows up in a top position, their ability to deliver across the three levels mentioned above is not guaranteed. It just means their web pages&rsquo; SEO meets your search intent. You still need to assess their skills carefully.</p>
+            <p className="mb-4 faq-answer"><strong>A &quot;content mill.&quot;</strong> Websites that offer content in bulk at a fixed per-word or monthly price. In our experience, these are to be avoided at all costs and are essentially redundant in the age of AI.</p>
+            <div className="h-6"></div>
 
-          <p className="mb-4 faq-answer">
-            If you have the budget, niche specfic content marketing agencies are the way to go.
-          </p>
-          <p className="mb-4 faq-answer">
-            Boutique cybersecurity content marketing agencies focusing on cybersecurity content creation can provide you with an end-to-end cybersecurity content marketing package that spans the three writer service levels outlined above.
-          </p>
-          <p className="mb-4 faq-answer">
-          </p>
-          <p className="mb-4 faq-answer">
-            <a href="https://cybersecurity-excellence-awards.com/candidates/content-visit-2025/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Content Visit</a> was awarded Cybersecurity Marketing Agency of the Year by the Cybersecurity Excellence Awards.
-          </p>
-          <p className="mb-4 faq-answer">
-           For example, Content Visit helps highly technical businesses in the security space plan and create content by combining expert interviews with original research and aiming for measurable results.
-          </p>
-          <p className="mb-4 faq-answer">
-            We work best with companies with a small internal marketing team already (this could be one person) and are keen to link content to business metrics like SEO (and AI powered SEO) performance and rankings or conversions.
-          </p>
-          <p className="mb-4 faq-answer">
-            You lean on us to take over the entire content channel as a fractional asset or plug us into your marketing team to scale content production.
-          </p>
-          <p className="mb-4 faq-answer">
-            <a href="https://www.contentvisit.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Get cybersecurity content writing support today.</a>
-          </p>
-          <div>
-            
+            <h4 className="font-semibold faq-question">Hiring an Agency vs. a Writer</h4>
+            <div className="h-6"></div>
+
+            <p className="mb-4 faq-answer">
+              If you have the budget, niche specfic content marketing agencies are the way to go.
+            </p>
+            <p className="mb-4 faq-answer">
+              Boutique cybersecurity content marketing agencies focusing on cybersecurity content creation can provide you with an end-to-end cybersecurity content marketing package that spans the three writer service levels outlined above.
+            </p>
+            <p className="mb-4 faq-answer">
+            </p>
+            <p className="mb-4 faq-answer">
+              <a href="https://cybersecurity-excellence-awards.com/candidates/content-visit-2025/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Content Visit</a> was awarded Cybersecurity Marketing Agency of the Year by the Cybersecurity Excellence Awards.
+            </p>
+            <p className="mb-4 faq-answer">
+             For example, Content Visit helps highly technical businesses in the security space plan and create content by combining expert interviews with original research and aiming for measurable results.
+            </p>
+            <p className="mb-4 faq-answer">
+              We work best with companies with a small internal marketing team already (this could be one person) and are keen to link content to business metrics like SEO (and AI powered SEO) performance and rankings or conversions.
+            </p>
+            <p className="mb-4 faq-answer">
+              You lean on us to take over the entire content channel as a fractional asset or plug us into your marketing team to scale content production.
+            </p>
+            <p className="mb-4 faq-answer">
+              <a href="https://www.contentvisit.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Get cybersecurity content writing support today.</a>
+            </p>
             <div>
-              <h4 className="font-semibold faq-question">How do you write cybersecurity content if you&#39;re not a cybersecurity practitioner</h4>
-              <p className="faq-answer">You need to be technical and have a broad understanding of the general market plus a specific understanding of the personas and market segment you are talking. Then partner directly with SMEs and review the product you are marketing.</p>
+              <div>
+                <h4 className="font-semibold faq-question">How do you write cybersecurity content if you&#39;re not a cybersecurity practitioner</h4>
+                <p className="faq-answer">You need to be technical and have a broad understanding of the general market plus a specific understanding of the personas and market segment you are talking. Then partner directly with SMEs and review the product you are marketing.</p>
+              </div>
+              <div>
+                <div className="h-6"></div>
+                <h4 className="font-semibold faq-question">How much does it cost to hire a cybersecurity writer?</h4>
+                <p className="faq-answer">Projects typically start at $1,500/month depending on scope. The best writers work in 3-month sprints to keep things fast and focused.</p>
+              </div>
+              <div className="h-6"></div>
+              <div>
+                <div className="h-6"></div>
+                <h4 className="font-semibold faq-question">How is this different from hiring a general contentwriter?</h4>
+                <p className="faq-answer">Generalists don&#39;t know how to talk to security buyers. We do. That&#39;s the difference between noise and content that converts.</p>
+              </div>
+              <div className="h-6"></div>
+              <div>
+                <div className="h-6"></div>
+                <h4 className="font-semibold faq-question">Who do cybersecurity content writers work with?</h4>
+                <p className="faq-answer">Cybersecurity content writers specialize in helping cybersecurity vendors and startups selling cybersecurity solutions who need bottom-of-funnel content to support pipeline generation and sales enablement.</p>
+              </div>
+              <div className="h-6"></div>
             </div>
-            <div>
-            <div className="h-6"></div>
-              <h4 className="font-semibold faq-question">How much does it cost to hire a cybersecurity writer?</h4>
-              <p className="faq-answer">Projects typically start at $1,500/month depending on scope. The best writers work in 3-month sprints to keep things fast and focused.</p>
-            </div>
-            <div className="h-6"></div>
-            <div>
-            <div className="h-6"></div>
-              <h4 className="font-semibold faq-question">How is this different from hiring a general contentwriter?</h4>
-              <p className="faq-answer">Generalists don&#39;t know how to talk to security buyers. We do. That&#39;s the difference between noise and content that converts.</p>
-            </div>
-            <div className="h-6"></div>
-            <div>
-            <div className="h-6"></div>
-              <h4 className="font-semibold faq-question">Who do cybersecurity content writers work with?</h4>
-              <p className="faq-answer">Cybersecurity content writers specialize in helping cybersecurity vendors and startups selling cybersecurity solutions who need bottom-of-funnel content to support pipeline generation and sales enablement.</p>
-            </div>
-            <div className="h-6"></div>
-          </div>
           </div>
         </div>
         <div className="h-3"></div>
@@ -537,3 +619,42 @@ export default function Home() {
     </div>
   );
 }
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Cybersecurity Content Writing Service Guide",
+              "description": "Ranked list of cybersecurity writers, content marketing services, and strategy insights by cybersecurity marketing agency Content Visit.",
+              "url": "https://www.contentvisit.com/cybersecurity-content-writing-service-guide",
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.contentvisit.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Cybersecurity Content Writing Service Guide",
+                    "item": "https://www.contentvisit.com/cybersecurity-content-writing-service-guide"
+                  }
+                ]
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Content Visit",
+                "url": "https://www.contentvisit.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.contentvisit.com/logo.png"
+                }
+              }
+            })
+          }}
+        />
