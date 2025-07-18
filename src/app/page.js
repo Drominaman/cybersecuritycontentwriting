@@ -571,12 +571,7 @@ export default function Home() {
           </div>
           <div className="h-2"></div>
           <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-8">
-            <form action="mailto:contact@contentvisit.com" method="POST" encType="text/plain" className="space-y-6 w-full max-w-md mb-12">
-              <input type="text" name="name" placeholder="Your Name" className="w-full border p-3 rounded-xl" />
-              <input type="email" name="email" placeholder="Your Email" className="w-full border p-3 rounded-xl" />
-              <textarea name="message" placeholder="Tell us about your project..." className="w-full border p-3 rounded-xl" rows="4"></textarea>
-              <button type="submit" className="cta-button">Send Message</button>
-            </form>
+            <p className="mb-6 text-center">For inquiries, please email us at <a href="mailto:contact@contentvisit.com" className="text-blue-600 underline">contact@contentvisit.com</a>.</p>
             <div className="h-8"></div>
             <div className="w-full max-w-[200px] mb-12">
               <Image 
