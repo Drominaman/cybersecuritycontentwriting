@@ -52,9 +52,116 @@ export default function Services() {
     <div className="min-h-screen bg-white text-gray-900">
       <Head>
         <title>Cybersecurity Content Writing Services</title>
-        <meta name="description" content="Go beyond blogging—7 proven cybersecurity content writer use cases, FAQs, and why Content Visit is the top choice." />
+        <meta name="description" content="Hire a specialized cybersecurity content writing service for vendors and service providers and get expert SEO/GEO content, whitepapers, and sales collateral that drive conversions." />
         <link rel="canonical" href="https://www.cybersecuritycontentwriting.com/content-services" />
+        {/* Social preview meta tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Cybersecurity Content Writing Services | Content Visit" />
+        <meta property="og:description" content="Hire a specialized cybersecurity content writing service for vendors and service providers and get expert SEO blogs, whitepapers, and sales collateral that drive conversions." />
+        <meta property="og:image" content="https://www.cybersecuritycontentwriting.com/og-image.png" />
+        <meta property="og:url" content="https://www.cybersecuritycontentwriting.com/content-services" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cybersecurity Content Writing Services | Content Visit" />
+        <meta name="twitter:description" content="Hire a specialized cybersecurity content writing service for vendors and service providers and get expert SEO blogs, whitepapers, and sales collateral that drive conversions." />
+        <meta name="twitter:image" content="https://www.cybersecuritycontentwriting.com/twitter-image.png" />
+
+        {/* JSON-LD ProfessionalService with embedded FAQ */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Content Visit Cybersecurity Content Writing",
+          "url": "https://www.cybersecuritycontentwriting.com/content-services",
+          "logo": "https://www.cybersecuritycontentwriting.com/favicon-96x96.png",
+          "description": "Expert cybersecurity content writing service for vendors and service providers.",
+          "areaServed": "Global",
+          "serviceType": "Content Writing"
+        }
+        `}} />
+
+        {/* JSON-LD BreadcrumbList */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cybersecuritycontentwriting.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cybersecuritycontentwriting.com/services" },
+            { "@type": "ListItem", "position": 3, "name": "Cybersecurity Content Writing", "item": "https://www.cybersecuritycontentwriting.com/content-services" }
+          ]
+        }
+        `}} />
+
+        {/* JSON-LD FAQPage */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How are cybersecurity content writers working in 2025?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Companies producing large volumes of AI content are seeing mixed results. The best writing still happens when companies pair skilled writers with SMEs to produce engaging content."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does your cybersecurity content writing service cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Retainer pricing for full content marketing starts from as little as $500 per month."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What kind of content can a cybersecurity content writer create?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "White-papers, blogs, case studies, infographics, solution briefs, reports, social posts, ads, thought-leadership articles, landing pages and more."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will a cybersecurity content writer also do design for assets like white papers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Content Visit can also cover design and production as a full service agency."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use AI instead of a cybersecurity content writer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not really. AI can generate text but can’t write convincing cybersecurity content or copy. There’s no replacement for a market-oriented cybersecurity content writer at the moment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does a cybersecurity content writer need to be a practitioner?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "They need strong foundational technical knowledge but, more importantly, can interview true experts and help tell their stories."
+              }
+            }
+          ]
+        }
+        `}} />
       </Head>
+
+      {/* Breadcrumb navigation */}
+      <nav aria-label="Breadcrumb" className="py-4 px-6 bg-gray-100">
+        <ol className="flex space-x-2 text-sm text-gray-600">
+          <li><Link href="/">Home</Link></li>
+          <li>/</li>
+          <li><Link href="/services">Services</Link></li>
+          <li>/</li>
+          <li className="font-semibold">Cybersecurity Content Writing</li>
+        </ol>
+      </nav>
 
       {/* HERO / INTRO */}
       <div className="hero">
