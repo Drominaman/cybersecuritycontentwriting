@@ -1,7 +1,7 @@
 import Link from "next/link";
 export const metadata = {
   title: 'Cybersecurity Content Examples',
-  description: '30 content ideas for cybersecurity companies.',
+  description: '30 content markeitng ideas for cybersecurity companies.',
 };
 
 

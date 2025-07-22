@@ -9,7 +9,7 @@ export const metadata = {
     default: "Cybersecurity Content Writing Service Guide",
     template: "%s | Cybersecurity Content Writing",
   },
-  description: "Ranked list of cybersecurity writers, content marketing services, and strategy insights by cybersecurity marketing agency Content Visit.",
+  description: "The best Cybersecurity Content Writer Service on the market thanks to a combination of expert human led content writing, strategy and data.",
 };
 
 export default function RootLayout({ children }) {

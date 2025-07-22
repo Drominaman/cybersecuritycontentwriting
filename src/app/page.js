@@ -224,7 +224,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.cybersecuritycontentwriting.com" />
         <meta property="og:title" content="Cybersecurity Content Writer Service Guide" />
-        <meta property="og:description" content="A curated guide to the best cybersecurity content writer, agencies, and services." />
+        <meta property="og:description" content="A curated guide to the best cybersecurity content writers, agencies, and services." />
         <meta property="og:image" content="https://www.cybersecuritycontentwriting.com/og-image.png" />
         
         {/* --- Twitter Meta Tags --- */}
