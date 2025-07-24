@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Sitemap: https://cybersecuritycontentwriting.com/sitemap.xml
 
+# Host
+Host: https://cybersecuritycontentwriting.com
+
+# Sitemaps
+Sitemap: https://cybersecuritycontentwriting.com/sitemap.xml
