@@ -328,27 +328,10 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          
         </section>
 
-        <section aria-label="Word From the Curator" className="card max-w-8xl mx-auto my-12 flex flex-col md:flex-row items-center gap-20">
-          <div className="flex-shrink-0">
-            <Image 
-              src="/Laura-Martisiute.png"
-              alt="Laura Martisiute, founder of Content Visit"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold">A Word From the Curator</h3>
-            <p className="mt-2 text-gray-700">
-              This list was personally researched and compiled by Laura Martisiute, founder of{' '}
-              <a href="https://www.contentvisit.com" target="_blank" rel="noopener" className="font-semibold text-blue-600 underline">Content Visit</a>. 
-              With over a decade of experience in B2B tech marketing and a Cybersecurity Excellence Award under her belt, she has vetted hundreds of writers to identify the talent that truly understands the security space.
-            </p>
-          </div>
-        </section>
         <div className="card my-12" id="what-is-cybersecurity-content-writing">
           <h2 id="what-is-cybersecurity-content-writing" className="text-2xl font-semibold mb-4">What Is Cybersecurity Content Writing?</h2>
           <p className="mb-3 leading-relaxed text-left">Cybersecurity content writing is how cybersecurity vendors and service providers engage in-market buyers including IT leaders, CISOs, practitioners and other members of security solution buying teams..
