@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.writer-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.writer-card h3 {
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 0.5rem;
+}
